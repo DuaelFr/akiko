@@ -1,15 +1,15 @@
-uuid: b8c07509-243f-4c00-8f89-a6ce1bdf49d1
+uuid: 4dfd94a8-8808-43eb-b5f4-6a6f15a5bf16
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+  default_config_hash: EAlCAHiVy5x3aTOW2K9XaWE4kelyfSSSKv8_uiomGJM
+id: akiko_local_actions
+theme: akiko
 region: content
-weight: -20
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,17 +1,17 @@
-uuid: 6dd11d51-9372-493d-986a-d1f8973eb196
+uuid: 2e04a6a6-2d72-4729-843a-23a2bd074fa5
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
+  default_config_hash: uxiZlSldLtoOp05pfXeKJxxtvB0ckxx3mAAabJdAJnU
+id: akiko_messages
+theme: akiko
 region: highlighted
-weight: 0
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

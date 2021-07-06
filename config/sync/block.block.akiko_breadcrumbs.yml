@@ -1,17 +1,17 @@
-uuid: dc1e01c3-f3b3-4971-9450-97b9856ea8b7
+uuid: 7cbaa3c5-d8ff-4a9b-b151-b71bac806e90
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
-weight: 0
+  default_config_hash: N1cq7jc4R0m_29rs2Jnz0WjcslEeZ0AsN9Od1-_vW9s
+id: akiko_breadcrumbs
+theme: akiko
+region: highlighted
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

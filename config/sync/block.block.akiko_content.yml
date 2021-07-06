@@ -1,15 +1,15 @@
-uuid: 65f4e2d9-b62b-47f7-b094-bdff95f8cb4c
+uuid: 571d8192-e869-44c6-a5b6-dc8a422d5ec6
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+  default_config_hash: XJkApTCnidVbNIe-SvLIX1pVPIiw5j_m0SWT-eYw39E
+id: akiko_content
+theme: akiko
 region: content
 weight: 0
 provider: null

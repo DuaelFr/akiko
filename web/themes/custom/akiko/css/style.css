@@ -1,0 +1,7 @@
+/* 
+ * C'est juste pour tester le bon fonctionnement du sous-sous-thème Akiko
+ * A supprimer, évidemment !
+ */
+body.path-frontpage h1 {
+  color: red;
+}

@@ -1,17 +1,17 @@
-uuid: 0b8e8200-49e5-41b1-a2d8-784bc45e18da
+uuid: 5a3fedc5-77ee-400d-bca1-b89cc55098d3
 langcode: fr
 status: true
 dependencies:
   module:
     - commerce_cart
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
-id: bartik_shopping_cart
-theme: bartik
-region: header
-weight: null
+  default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
+id: akiko_shopping_cart
+theme: akiko
+region: top_navigation
+weight: -5
 provider: null
 plugin: commerce_cart
 settings:

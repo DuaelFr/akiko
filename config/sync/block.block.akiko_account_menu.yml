@@ -1,4 +1,4 @@
-uuid: 21e04594-7da3-4ecc-948e-266c37e64589
+uuid: b531f446-6720-4713-b8f8-5ce8d01a283b
 langcode: fr
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+  default_config_hash: l7DU4IlrCj2DTMidvM-KK-P8heuOP8XCsxry_UoLm5E
+id: akiko_account_menu
+theme: akiko
+region: top_navigation
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:

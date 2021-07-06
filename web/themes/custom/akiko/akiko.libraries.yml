@@ -1,0 +1,6 @@
+akiko-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/akiko.js

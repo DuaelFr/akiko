@@ -1,4 +1,4 @@
-uuid: 3ba9be86-e617-48d1-8159-24c1d3ab9f77
+uuid: a2cfa6e4-8e65-4689-9823-a23a83d190c5
 langcode: fr
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
-id: bartik_footer
-theme: bartik
-region: footer_fifth
-weight: 0
+  default_config_hash: nI9USQjCYio-S2yKUK3OfHTG92pwjXbHdzhKKeAWaAY
+id: akiko_footer
+theme: akiko
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

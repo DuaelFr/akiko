@@ -1,15 +1,15 @@
-uuid: 62a56eee-03a1-4aaf-9134-913ea79bda94
+uuid: b205edb5-d7c2-47c1-9b54-dde09e034487
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+  default_config_hash: rmiFUWInr28Z1v9rk-oycl_G9hlS7PzBvKbih2qIEuM
+id: akiko_local_tasks
+theme: akiko
 region: content
-weight: -40
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

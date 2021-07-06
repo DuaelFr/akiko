@@ -1,4 +1,4 @@
-uuid: 8be91345-dadf-433f-8cc6-bcdd770790e2
+uuid: 02fa8b06-fcd6-48a5-a824-5f1bc26321c4
 langcode: fr
 status: true
 dependencies:
@@ -6,11 +6,11 @@ dependencies:
     - commerce_checkout
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
-id: checkout_progress
-theme: bartik
+  default_config_hash: jSLJ3sJUecEmCmbbB-ISvExMtHpzXsFIguGKTTI6lPA
+id: akiko_checkout_progress
+theme: akiko
 region: content
 weight: -7
 provider: null

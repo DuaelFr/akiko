@@ -1,17 +1,17 @@
-uuid: 3b7bf1c2-cdc7-4072-a52e-b273aa5120da
+uuid: 580258ba-54fe-41ee-8fa2-17713e20fc07
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - akiko
 _core:
-  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: bartik_powered
-theme: bartik
-region: footer_fifth
-weight: 10
+  default_config_hash: z0llL779cPFRJ5myqA63dPOl35O7K1lx6wP5omHTi8U
+id: akiko_powered
+theme: akiko
+region: footer
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:
