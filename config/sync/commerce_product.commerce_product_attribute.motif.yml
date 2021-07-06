@@ -1,0 +1,7 @@
+uuid: d1e5997a-a224-4c1f-a7a3-adaebfc3cc48
+langcode: fr
+status: true
+dependencies: {  }
+id: motif
+label: Motif
+elementType: commerce_product_rendered_attribute

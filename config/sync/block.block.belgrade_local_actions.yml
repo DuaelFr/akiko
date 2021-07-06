@@ -1,0 +1,20 @@
+uuid: d9f0ee51-3552-4adb-b8ab-b5658fe81968
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - belgrade
+_core:
+  default_config_hash: EAlCAHiVy5x3aTOW2K9XaWE4kelyfSSSKv8_uiomGJM
+id: belgrade_local_actions
+theme: belgrade
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

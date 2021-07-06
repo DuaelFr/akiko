@@ -1,0 +1,22 @@
+uuid: 1e8c49e8-e44b-4226-96ad-c56263d673af
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - commerce_bootstrap
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: commerce_bootstrap_local_tasks
+theme: commerce_bootstrap
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f4532a5a-3c61-4341-986e-edf432bc2af0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - commerce_bootstrap
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: commerce_bootstrap_breadcrumbs
+theme: commerce_bootstrap
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }
