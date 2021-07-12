@@ -1,0 +1,7 @@
+uuid: bc91e87d-e31f-438a-a666-2982e593a6b3
+langcode: fr
+status: true
+dependencies: {  }
+id: print
+label: Imprimé
+elementType: commerce_product_rendered_attribute
