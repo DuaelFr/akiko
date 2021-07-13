@@ -5,8 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.top
     - field.field.commerce_product.top.body
+    - field.field.commerce_product.top.field_images
+    - image.style.thumbnail
   module:
     - commerce
+    - image
     - path
     - text
 id: commerce_product.top.default
@@ -30,6 +33,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_images:
+    weight: 91
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   langcode:
     type: language_select
     weight: 2
