@@ -1,0 +1,11 @@
+uuid: 814c7ed1-0bf5-4e9d-8242-a36be58ddfcc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shirt
+id: commerce_product.shirt
+target_entity_type_id: commerce_product
+target_bundle: shirt
+default_langcode: site_default
+language_alterable: false

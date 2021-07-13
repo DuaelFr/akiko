@@ -1,0 +1,12 @@
+uuid: 01eaa3d5-df60-4318-9855-301e7af01ef0
+langcode: fr
+status: true
+dependencies: {  }
+id: jumpsuit
+label: Combinaison
+description: ''
+variationType: size_print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

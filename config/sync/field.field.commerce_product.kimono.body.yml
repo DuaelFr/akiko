@@ -1,0 +1,23 @@
+uuid: 74f88669-348b-4a47-8e64-52102d0f7709
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kimono
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.kimono.body
+field_name: body
+entity_type: commerce_product
+bundle: kimono
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

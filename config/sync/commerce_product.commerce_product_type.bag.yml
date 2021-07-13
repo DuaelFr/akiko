@@ -1,0 +1,12 @@
+uuid: 1a808152-f8c6-429c-bc13-602e3fb43bff
+langcode: fr
+status: true
+dependencies: {  }
+id: bag
+label: Sac
+description: ''
+variationType: print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

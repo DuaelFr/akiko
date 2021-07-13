@@ -1,0 +1,12 @@
+uuid: bbef48d7-82e7-4d7d-9f2e-ddf435092bef
+langcode: fr
+status: true
+dependencies: {  }
+id: purse
+label: Purse
+description: ''
+variationType: print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

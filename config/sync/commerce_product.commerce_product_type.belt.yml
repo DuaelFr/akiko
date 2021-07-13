@@ -1,0 +1,12 @@
+uuid: 075d993d-e5e4-48b7-a52b-b6df4486841d
+langcode: fr
+status: true
+dependencies: {  }
+id: belt
+label: Ceinture
+description: ''
+variationType: print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

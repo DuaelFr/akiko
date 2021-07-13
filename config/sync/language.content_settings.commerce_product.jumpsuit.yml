@@ -1,0 +1,11 @@
+uuid: ba97eb84-b033-49ce-af8c-f4385a2d7a0b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.jumpsuit
+id: commerce_product.jumpsuit
+target_entity_type_id: commerce_product
+target_bundle: jumpsuit
+default_langcode: site_default
+language_alterable: false

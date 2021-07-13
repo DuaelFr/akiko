@@ -1,0 +1,11 @@
+uuid: 3ebb5811-9fdd-488d-91e3-b6c36fe30375
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.dress
+id: commerce_product.dress
+target_entity_type_id: commerce_product
+target_bundle: dress
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: 02340b59-4d13-4a64-9a75-a8089b1c8ed1
+langcode: fr
+status: true
+dependencies: {  }
+id: long_dress
+label: 'Robe longue'
+description: ''
+variationType: size_print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

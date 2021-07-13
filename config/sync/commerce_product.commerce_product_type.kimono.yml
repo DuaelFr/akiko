@@ -1,0 +1,12 @@
+uuid: c0b3f156-a67c-4463-819b-250120dc58d4
+langcode: fr
+status: true
+dependencies: {  }
+id: kimono
+label: Kimono
+description: ''
+variationType: print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

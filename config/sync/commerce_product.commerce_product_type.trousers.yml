@@ -1,0 +1,12 @@
+uuid: 6eccc9ff-152f-4766-baf9-6e3842ed1280
+langcode: fr
+status: true
+dependencies: {  }
+id: trousers
+label: Pantalon
+description: ''
+variationType: size_print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

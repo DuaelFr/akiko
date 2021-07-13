@@ -1,0 +1,11 @@
+uuid: e569a251-7bee-47b6-aa57-58e900c6df67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.purse
+id: commerce_product.purse
+target_entity_type_id: commerce_product
+target_bundle: purse
+default_langcode: site_default
+language_alterable: false

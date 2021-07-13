@@ -1,0 +1,12 @@
+uuid: b1479ac8-4973-4f01-96ad-82915f926361
+langcode: fr
+status: true
+dependencies: {  }
+id: top
+label: Top
+description: ''
+variationType: size_print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

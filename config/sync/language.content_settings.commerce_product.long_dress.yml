@@ -1,0 +1,11 @@
+uuid: ae1604b3-45c9-49d7-95a8-ddda8d0aed72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.long_dress
+id: commerce_product.long_dress
+target_entity_type_id: commerce_product
+target_bundle: long_dress
+default_langcode: site_default
+language_alterable: false
