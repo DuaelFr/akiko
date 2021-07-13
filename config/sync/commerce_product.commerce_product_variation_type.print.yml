@@ -1,0 +1,10 @@
+uuid: 7eb34225-11be-4e21-809d-cea5dc4962db
+langcode: fr
+status: true
+dependencies: {  }
+id: print
+label: Imprimé
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false
