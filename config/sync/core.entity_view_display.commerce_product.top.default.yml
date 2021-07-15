@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.top
     - field.field.commerce_product.top.body
     - field.field.commerce_product.top.field_images
+    - field.field.commerce_product.top.field_product_category
   module:
     - commerce_product
     - image
@@ -30,6 +31,14 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_product_category:
+    weight: 5
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   title:
     label: hidden
