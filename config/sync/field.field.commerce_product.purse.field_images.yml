@@ -1,0 +1,38 @@
+uuid: 26374daf-8f95-4066-8f59-d23e718dc994
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.purse
+    - field.storage.commerce_product.field_images
+  module:
+    - image
+id: commerce_product.purse.field_images
+field_name: field_images
+entity_type: commerce_product
+bundle: purse
+label: Photos
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: product_images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

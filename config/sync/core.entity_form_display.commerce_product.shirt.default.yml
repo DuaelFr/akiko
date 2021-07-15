@@ -5,8 +5,12 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.shirt
     - field.field.commerce_product.shirt.body
+    - field.field.commerce_product.shirt.field_images
+    - field.field.commerce_product.shirt.field_product_category
+    - image.style.thumbnail
   module:
     - commerce
+    - image
     - path
     - text
 id: commerce_product.shirt.default
@@ -30,6 +34,24 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_images:
+    weight: 91
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_product_category:
+    weight: 92
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2

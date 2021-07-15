@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies: {  }
 id: purse
-label: Purse
+label: Trousse
 description: ''
 variationType: print
 multipleVariations: true
