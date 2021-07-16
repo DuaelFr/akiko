@@ -55,6 +55,7 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  shs: 0
   state_machine: 0
   swiftmailer: 0
   system: 0
