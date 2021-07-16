@@ -10,7 +10,7 @@ dependencies:
   module:
     - commerce_product
     - image
-    - shs
+    - term_reference_tree
     - text
 id: commerce_product.clothing.default
 targetEntityType: commerce_product
@@ -36,10 +36,9 @@ content:
   field_product_category:
     weight: 13
     label: hidden
-    settings:
-      link: 0
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_shs
+    type: term_reference_tree
     region: content
   title:
     label: hidden

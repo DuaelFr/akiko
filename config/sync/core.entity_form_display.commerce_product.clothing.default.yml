@@ -12,7 +12,7 @@ dependencies:
     - commerce
     - image
     - path
-    - shs
+    - term_reference_tree
     - text
 id: commerce_product.clothing.default
 targetEntityType: commerce_product
@@ -46,12 +46,13 @@ content:
   field_product_category:
     weight: 2
     settings:
-      display_node_count: false
-      create_new_items: false
-      create_new_levels: false
-      force_deepest: false
+      select_parents: true
+      cascading_selection: 1
+      max_depth: 0
+      start_minimized: false
+      leaves_only: false
     third_party_settings: {  }
-    type: options_shs
+    type: term_reference_tree
     region: content
   langcode:
     type: language_select
