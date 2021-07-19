@@ -1,0 +1,28 @@
+uuid: 686d50d7-2c07-498a-a3de-3f8177677f34
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.product_categories
+  module:
+    - facets
+    - system
+  theme:
+    - akiko
+id: facets_categories
+theme: akiko
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:product_categories'
+settings:
+  id: 'facet_block:product_categories'
+  label: Catégories
+  provider: facets
+  label_display: visible
+  block_id: facets_categories
+visibility:
+  request_path:
+    id: request_path
+    pages: "/produits\r\n/produits/*"
+    negate: false
