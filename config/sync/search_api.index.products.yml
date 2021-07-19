@@ -1,0 +1,103 @@
+uuid: d3d32463-a636-4b5a-bb2c-c5e0e0a57af0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+    - search_api
+  config:
+    - field.storage.commerce_product.field_product_category
+    - search_api.server.database
+id: products
+name: Produits
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: Créé
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - commerce_product
+  field_product_category:
+    label: Catégorie
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_category
+  name:
+    label: 'Catégorie » Terme de taxonomie » Nom'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_product_category:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_category
+      module:
+        - taxonomy
+  product_id:
+    label: 'Identifiant (ID)'
+    datasource_id: 'entity:commerce_product'
+    property_path: product_id
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: Titre
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - commerce_product
+  type:
+    label: 'Type de produit'
+    datasource_id: 'entity:commerce_product'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  hierarchy:
+    fields:
+      field_product_category: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  ignorecase:
+    all_fields: false
+    fields:
+      - field_product_category
+      - title
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: database
