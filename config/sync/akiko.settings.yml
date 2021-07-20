@@ -1,3 +1,9 @@
+schemas:
+  bootstrap: 8000
+  commerce_bootstrap: 8000
+  belgrade: 8000
+  akiko: 8000
+breadcrumb_title: false
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
@@ -12,8 +18,3 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  commerce_bootstrap: 8000
-  belgrade: 8000
-  akiko: 8000
