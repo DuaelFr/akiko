@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.clothing.body
     - field.field.commerce_product.clothing.field_images
     - field.field.commerce_product.clothing.field_product_category
+    - image.style.product
   module:
     - commerce_product
     - image
@@ -28,7 +29,7 @@ content:
     weight: 12
     label: hidden
     settings:
-      image_style: ''
+      image_style: product
       image_link: ''
     third_party_settings: {  }
     type: image
