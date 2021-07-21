@@ -1,0 +1,19 @@
+uuid: c5133e65-cdff-4106-af81-abacd737441a
+langcode: fr
+status: true
+dependencies: {  }
+id: paiement_a_reception_de_la_commande
+label: 'Paiement à réception de la commande'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: 'Vous payer à la réception de la commande.'
+    format: plain_text
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND
