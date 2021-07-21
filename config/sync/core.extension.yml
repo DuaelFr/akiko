@@ -12,6 +12,8 @@ module:
   comment: 0
   commerce: 0
   commerce_cart: 0
+  commerce_cart_api: 0
+  commerce_cart_flyout: 0
   commerce_checkout: 0
   commerce_log: 0
   commerce_number_pattern: 0
@@ -59,9 +61,11 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
+  rest: 0
   search: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   state_machine: 0
   swiftmailer: 0
   system: 0
