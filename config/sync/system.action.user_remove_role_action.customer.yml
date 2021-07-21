@@ -1,0 +1,14 @@
+uuid: 18bdb30a-e3f7-460d-a0a4-114e978389d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.customer
+  module:
+    - user
+id: user_remove_role_action.customer
+label: 'Enlever le rôle Client des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: customer

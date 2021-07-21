@@ -1,0 +1,14 @@
+uuid: 135c2569-22fe-4120-8987-8bf76b178784
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.customer
+  module:
+    - user
+id: user_add_role_action.customer
+label: 'Ajouter le rôle Client aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: customer
