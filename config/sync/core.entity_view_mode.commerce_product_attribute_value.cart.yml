@@ -1,0 +1,10 @@
+uuid: 9ffd9d75-35ff-4f1c-9766-07a69fab99d4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_attribute_value.cart
+label: Panier
+targetEntityType: commerce_product_attribute_value
+cache: true
