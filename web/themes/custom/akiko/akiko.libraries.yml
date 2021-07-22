@@ -2,5 +2,6 @@ akiko-styling:
   css:
     theme:
       css/style.css: {}
+      css/color.css: {}
   js:
     js/akiko.js
