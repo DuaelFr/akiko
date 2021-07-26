@@ -10,7 +10,7 @@ dependencies:
     - field.field.commerce_product.accessory.field_product_category
     - image.style.cart_product
   module:
-    - image
+    - image_delta_formatter
 id: commerce_product.accessory.cart
 targetEntityType: commerce_product
 bundle: accessory
@@ -22,8 +22,10 @@ content:
     settings:
       image_style: cart_product
       image_link: ''
+      deltas: 0
+      deltas_reversed: false
     third_party_settings: {  }
-    type: image
+    type: image_delta_formatter
     region: content
   title:
     label: hidden

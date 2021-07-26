@@ -10,20 +10,22 @@ dependencies:
     - field.field.commerce_product.clothing.field_product_category
     - image.style.cart_product
   module:
-    - image
+    - image_delta_formatter
 id: commerce_product.clothing.cart
 targetEntityType: commerce_product
 bundle: clothing
 mode: cart
 content:
   field_images:
-    type: image
+    type: image_delta_formatter
     weight: 1
     region: content
     label: hidden
     settings:
       image_style: cart_product
       image_link: ''
+      deltas: 0
+      deltas_reversed: false
     third_party_settings: {  }
   title:
     type: string
