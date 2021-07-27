@@ -5,6 +5,10 @@ table_striped: 0
 breadcrumb_home: 1
 _core:
   default_config_hash: jAmtwfSVVTtk42kIXLA-a7Jblc-HBdlo9uTbKUp4UkM
+schemas:
+  bootstrap: 8000
+  commerce_bootstrap: 8000
+  belgrade: 8000
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
@@ -19,8 +23,21 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  commerce_bootstrap: 8000
-  belgrade: 8000
-langcode: fr
+table_responsive: '-1'
+region_wells:
+  navigation: ''
+  top_navigation: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''
