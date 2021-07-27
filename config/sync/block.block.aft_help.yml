@@ -1,0 +1,22 @@
+uuid: 540d68c7-44f1-49d3-9d08-b019220e02b4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - aft
+_core:
+  default_config_hash: gKtOcSQTQki2pujw1HB5crJu7WlQmuPbl9cMqPDeWtA
+id: aft_help
+theme: aft
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

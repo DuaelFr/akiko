@@ -1,0 +1,25 @@
+uuid: b5002a55-b992-4940-b4f2-611cf35003b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.catalog
+  module:
+    - system
+  theme:
+    - aft
+id: aft_catalog_menu_navigation
+theme: aft
+region: navigation
+weight: -7
+provider: null
+plugin: 'system_menu_block:catalog'
+settings:
+  id: 'system_menu_block:catalog'
+  label: 'Catalogue menu navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

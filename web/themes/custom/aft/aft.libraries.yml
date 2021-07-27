@@ -1,0 +1,4 @@
+custom-styling:
+  css:
+    theme:
+      css/aft.css: {}

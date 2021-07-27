@@ -1,0 +1,22 @@
+uuid: c053387d-1f81-4af0-a8fc-5660db106311
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aft
+_core:
+  default_config_hash: uxiZlSldLtoOp05pfXeKJxxtvB0ckxx3mAAabJdAJnU
+id: aft_messages
+theme: aft
+region: highlighted
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
