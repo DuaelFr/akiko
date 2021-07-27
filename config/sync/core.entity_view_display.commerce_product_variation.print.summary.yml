@@ -31,10 +31,17 @@ content:
       view_mode: cart
       link: false
     third_party_settings: {  }
+  title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   attribute_print: true
   langcode: true
   price: true
   search_api_excerpt: true
   sku: true
-  title: true

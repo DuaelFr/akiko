@@ -1,0 +1,10 @@
+uuid: c95680e3-630c-434c-8e2d-ae7b61d0b76a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.summary
+label: Résumé
+targetEntityType: commerce_product
+cache: true
