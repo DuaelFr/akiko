@@ -42,6 +42,7 @@
         "drupal/facets": "^1.8",
         "drupal/facets_pretty_paths": "^1.1",
         "drupal/image_delta_formatter": "^1.1",
+        "drupal/potx": "^1.0@alpha",
         "drupal/require_login": "^2.4",
         "drupal/search_api": "^1.19",
         "drupal/swiftmailer": "^2.0",
