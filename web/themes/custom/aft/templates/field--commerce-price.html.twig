@@ -53,6 +53,13 @@
   ]
 %}
 
+{# {%
+  set currentPath = path(
+    app.request.attributes.get('_route'),
+    app.request.attributes.get('_route_params')
+  )
+%} #}
+
 {#{% if label_hidden %}#}
 {#  {% if multiple %}#}
 {#    <div{{ attributes.addClass(classes, 'field--items') }}>#}
@@ -62,7 +69,12 @@
 {#    </div>#}
 {#  {% else %}#}
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }} <span class="tax-suffix">HT</span></div>
+      <div{{ attributes.addClass(classes, 'field--item') }}>
+      {{ item.content }}
+      {% if '/cart' not in url('<current>')['#markup'] %}
+         <span class="tax-suffix">HT</span>
+      {% endif %}
+      </div>
     {% endfor %}
 {#  {% endif %}#}
 {#{% else %}#}
