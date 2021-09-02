@@ -21,4 +21,5 @@ regions:
 
 libraries:
   - aft/custom-styling
+  - aft/fonts
 

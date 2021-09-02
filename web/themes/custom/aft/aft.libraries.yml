@@ -3,6 +3,11 @@ custom-styling:
     theme:
       css/aft.css: {}
 
+fonts:
+  css:
+    theme:
+      'https//fonts.googleapis.com/css?family=Nunito': { type: external }
+
 aft-custom-form-elements:
   js:
     'js/aft_custom_form_elements.js': { }
