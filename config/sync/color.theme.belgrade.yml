@@ -1,13 +1,13 @@
 palette:
-  primary: '#9F4143'
-  light: '#D3BABA'
-  lighter: '#F2E9E9'
-  dark: '#592750'
-  text: '#212121'
+  primary: '#437A9E'
+  light: '#A5B6C1'
+  lighter: '#d0e5f1'
+  dark: '#555B5E'
+  text: '#333333'
   background: '#ffffff'
-logo: 'public://color/belgrade-86ed13b9/logo.svg'
+logo: 'public://color/belgrade-66f36c4c/logo.svg'
 stylesheets:
-  - 'public://color/belgrade-86ed13b9/color.css'
+  - 'public://color/belgrade-66f36c4c/color.css'
 files:
-  - 'public://color/belgrade-86ed13b9/logo.svg'
-  - 'public://color/belgrade-86ed13b9/color.css'
+  - 'public://color/belgrade-66f36c4c/logo.svg'
+  - 'public://color/belgrade-66f36c4c/color.css'
