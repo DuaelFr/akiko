@@ -6,3 +6,106 @@ body{
   font-size: 60%;
   font-weight: normal;
 }
+
+/*Colors*/
+.alert-success {
+  background-color: #A5b353;
+  border-color: #a5b353;
+  color: #fff;
+}
+
+/*Logo accueil*/
+.path-frontpage .region-header .logo {
+  filter: invert(0);
+  /*background: url(../img/logo-akiko.png) no-repeat;
+  width: 300px;
+  height: 77px;*/
+}
+
+/*Header accueil*/
+.region-header,
+.path-frontpage .region-header{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+}
+.path-frontpage .region-header .menu-catalog>.menu__item>.menu__link {
+  color: #000;
+}
+
+/*Logo slider menu*/
+.region-navigation .menu a[data-drupal-link-system-path="<front>"] {
+  width: 270px;
+  height: 42px;
+  margin: 70px auto;
+  padding: 0;
+  background: url(../logo.svg) no-repeat center;
+  filter: invert(1);
+}
+
+.block-facets{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/*List views products*/
+.commerce-product--catalog{
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.views-row .field--type-commerce-price{
+  padding-right: 20px;
+}
+.commerce-product--catalog:hover .commerce-product--catalog__image img {
+  opacity: 0.7;
+}
+.commerce-product--catalog__image{
+  background: #000;
+}
+.commerce-product--catalog:hover .commerce-product--catalog__info{
+  background: #000;
+}
+.commerce-product--catalog__info .field--name-title,
+.commerce-product--catalog__info .field--name-title a{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*Form*/
+.form-inline .form-control {
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+
+/*Fiche produit*/
+.product-img--thumb:hover:before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.commerce-product__contents{
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px;
+}
+.commerce-product--full .field--name-title{
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  color: #bf2b6b;
+}
+.commerce-product--full .field--name-price{
+  font-size: 24px;
+}
+.commerce-product--full .form-control{
+  border: 1px solid #d0d0d0;
+}
+.commerce-product--full .form-inline .control-label,
+.commerce-product--full .form-type-select label,
+.commerce-product--full .panel-title{
+  text-transform: none;
+  font-weight: 600;
+  font-size:15px;
+}
+.commerce-product--full .button--add-to-cart.btn-success {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
