@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.commerce_product.cart
     - field.field.commerce_product.accessory.body
     - field.field.commerce_product.accessory.field_images
+    - field.field.commerce_product.accessory.field_length
     - field.field.commerce_product.accessory.field_product_category
     - image.style.cart_product
   module:
@@ -38,6 +39,7 @@ content:
 hidden:
   body: true
   created: true
+  field_length: true
   field_product_category: true
   langcode: true
   search_api_excerpt: true
