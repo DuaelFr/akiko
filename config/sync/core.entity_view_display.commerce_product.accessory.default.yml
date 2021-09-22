@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.accessory
     - field.field.commerce_product.accessory.body
     - field.field.commerce_product.accessory.field_images
+    - field.field.commerce_product.accessory.field_length
     - field.field.commerce_product.accessory.field_product_category
     - image.style.catalog
   module:
@@ -33,6 +34,17 @@ content:
       image_link: content
     third_party_settings: {  }
     type: image
+    region: content
+  field_length:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
     region: content
   field_product_category:
     weight: 4
