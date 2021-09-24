@@ -3,6 +3,7 @@
 use Drupal\Core\Url;
 use Drupal\facets\FacetInterface;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_menu_links_discovered_alter().
@@ -74,3 +75,12 @@ function akiko_preprocess_breadcrumb(&$variables) {
 //  dpm($form['actions']['next']['#value']);
 //
 //}
+
+function akiko_views_pre_render(ViewExecutable $view) {
+  foreach ($view->result as $key=>$item) {
+    $view->result[$key]->commerce_order_item_quantity = intval($item->commerce_order_item_quantity);
+    $view->result[$key]->commerce_product_field_data_commerce_product_variation_field = 
+    $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
+  }
+}
+
