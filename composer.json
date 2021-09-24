@@ -52,6 +52,7 @@
         "drupal/token": "^1.9",
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.5",
+        "kint-php/kint": "^3.3",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
