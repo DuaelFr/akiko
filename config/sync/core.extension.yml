@@ -85,6 +85,7 @@ module:
   user: 0
   views_data_export: 0
   views_ui: 0
+  xls_serialization: 0
   pathauto: 1
   views: 10
   commerce_base: 1000

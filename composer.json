@@ -51,6 +51,7 @@
         "drupal/term_reference_tree": "^1.0",
         "drupal/token": "^1.9",
         "drupal/views_data_export": "^1.0",
+        "drupal/xls_serialization": "^1.2",
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.5",
         "kint-php/kint": "^3.3",
