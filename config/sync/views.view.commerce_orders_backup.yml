@@ -1,4 +1,4 @@
-uuid: 56aebf74-02a3-4869-8155-1921835d3d32
+uuid: def389c6-9644-4061-95c0-a947f3ee2a38
 langcode: fr
 status: true
 dependencies:
@@ -16,8 +16,8 @@ dependencies:
     - xls_serialization
 _core:
   default_config_hash: HFX6ZqjZ-Ph27nJoRvTzBtYCqiDzUaPdz-yRGWiQJtE
-id: commerce_orders
-label: Commandes
+id: commerce_orders_backup
+label: 'Backup de Commandes'
 module: views
 description: ''
 tag: Commerce
