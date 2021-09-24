@@ -50,6 +50,7 @@
         "drupal/taxonomy_term_depth": "^2.5",
         "drupal/term_reference_tree": "^1.0",
         "drupal/token": "^1.9",
+        "drupal/views_data_export": "^1.0",
         "drupalcommerce/commerce_base": "9.x-dev",
         "drush/drush": "^10.5",
         "kint-php/kint": "^3.3",
