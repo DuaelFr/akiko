@@ -1,0 +1,13 @@
+uuid: 2cc74976-5106-45e5-a65a-44f432f941a1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: w6bR3lXJ_TIP18VDJDXjsrUOsROejb1ZBYpfKvqd0IM
+id: commerce_bulk_term_zdelete
+label: 'Delete terms'
+type: taxonomy_term
+plugin: commerce_bulk_term_zdelete
+configuration: {  }

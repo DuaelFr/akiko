@@ -1,0 +1,13 @@
+uuid: 57347f19-baee-4791-9a24-942012cf6cb0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: kRnTC7PcovpTZWfpkj3KpXI8hJ1_7ptSWt54oUm7ZHU
+id: commerce_bulk_variation_zdelete
+label: 'Delete variations'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_zdelete
+configuration: {  }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bcd76bcbca9849c1509462c787af39a",
+    "content-hash": "228ae73a17b43dea26b39af1106ae0a4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2385,6 +2385,58 @@
             }
         },
         {
+            "name": "drupal/commerce_bulk",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_bulk.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_bulk-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "10322d9d290a001a488e0abc8c3c650b0466ff25"
+            },
+            "require": {
+                "drupal/commerce_order": "*",
+                "drupal/core": "^8 || ^9",
+                "drupal/readmehelp": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1601219637",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Proshin (drugan)",
+                    "homepage": "https://www.drupal.org/u/drugan",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a service for bulk creation of Drupal Commerce entities.",
+            "homepage": "https://www.drupal.org/project/commerce_bulk",
+            "keywords": [
+                "Drupal",
+                "Drupal Commerce"
+            ],
+            "support": {
+                "source": "https://github.com/drugan/commerce_bulk",
+                "issues": "https://github.com/drugan/commerce_bulk/issues"
+            }
+        },
+        {
             "name": "drupal/commerce_cart",
             "version": "2.25.0",
             "require": {
@@ -4133,6 +4185,55 @@
             "homepage": "http://drupal.org/project/profile",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile"
+            }
+        },
+        {
+            "name": "drupal/readmehelp",
+            "version": "1.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/readmehelp.git",
+                "reference": "8.x-1.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/readmehelp-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "c58f7c433fd19b9311ef6d318a528a33abfb09ed"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1611478090",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Proshin (drugan)",
+                    "homepage": "https://www.drupal.org/u/drugan",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Renders README file on the admin/help/your_module page",
+            "homepage": "https://www.drupal.org/project/readmehelp",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/readmehelp",
+                "issues": "https://www.drupal.org/project/issues/readmehelp"
             }
         },
         {
@@ -14282,6 +14383,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/commerce_bulk": 10,
         "drupal/potx": 15,
         "drupalcommerce/commerce_base": 20
     },
