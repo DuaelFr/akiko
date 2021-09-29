@@ -1,6 +1,6 @@
 uuid: d7d363ba-ebe3-4284-9ebb-7046e8ab87ef
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - field.storage.commerce_product.field_length
@@ -12,13 +12,11 @@ dependencies:
   module:
     - commerce_order
     - commerce_product
-    - csv_serialization
     - options
     - rest
     - serialization
     - state_machine
     - user
-    - views_data_export
     - xls_serialization
 id: lengths
 label: Metrages
@@ -686,61 +684,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.roles
-      tags:
-        - 'config:field.storage.commerce_product.field_length'
-        - 'config:field.storage.commerce_product_variation.attribute_print'
-        - 'config:field.storage.commerce_product_variation.attribute_size'
-  data_export_1:
-    display_plugin: data_export
-    id: data_export_1
-    display_title: 'Exportation de données'
-    position: 3
-    display_options:
-      display_extenders: {  }
-      path: export/donnees-commandes.xls
-      filename: '[date:html_date]-akiko-commandes'
-      automatic_download: true
-      store_in_public_file_directory: null
-      redirect_to_display: none
-      custom_redirect_path: false
-      include_query_params: false
-      style:
-        type: data_export
-        options:
-          formats:
-            csv: csv
-          csv_settings:
-            delimiter: ','
-            enclosure: '"'
-            escape_char: \
-            strip_tags: true
-            trim: true
-            encoding: utf8
-            utf8_bom: '0'
-            use_serializer_encode_only: false
-          xls_settings:
-            xls_format: Excel2007
-            metadata:
-              creator: ''
-              last_modified_by: ''
-              title: ''
-              description: ''
-              subject: ''
-              keywords: ''
-              category: ''
-              manager: ''
-              company: ''
-      displays:
-        page_1: page_1
-        default: '0'
-      enabled: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - request_format
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'

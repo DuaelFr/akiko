@@ -77,10 +77,12 @@ function akiko_preprocess_breadcrumb(&$variables) {
 //}
 
 function akiko_views_pre_render(ViewExecutable $view) {
-  foreach ($view->result as $key=>$item) {
-    $view->result[$key]->commerce_order_item_quantity = intval($item->commerce_order_item_quantity);
-    $view->result[$key]->commerce_product_field_data_commerce_product_variation_field = 
-    $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
+  if ($view->id() == 'order_data_export') {
+    foreach ($view->result as $key=>$item) {
+      $view->result[$key]->commerce_order_item_quantity = intval($item->commerce_order_item_quantity);
+      $view->result[$key]->commerce_product_field_data_commerce_product_variation_field = 
+      $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
+    }
   }
 }
 
