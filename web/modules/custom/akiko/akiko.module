@@ -86,3 +86,68 @@ function akiko_views_pre_render(ViewExecutable $view) {
   }
 }
 
+function akiko_bulk_creator_sku_alter(&$sku, $settings, $variation) {
+  //~ //dpm($sku);
+  //~ //dpm($settings);
+  //~ //dpm($variation);
+  //~ //dpm($variation->getTitle());
+  
+  //~ $title = $variation->getTitle();
+  //~ $product = $variation->getProduct();
+  //~ $categories = $product->get('field_product_category')->getValue();
+  //~ $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($categories[1]['target_id']);
+  //~ $name = $term->name->value;
+  
+  //~ //dpm($categories);
+
+
+$processed_title = str_replace(' - ', '-' . $name . '-', $title);
+//dpm($title);
+$processed_title = str_replace(', ', '-', $processed_title);
+//dpm($title);
+$processed_title = strtolower($processed_title);
+//dpm($title);
+  
+$sku = $processed_title;
+}
+
+//~ function akiko_commerce_bulk_variation_alter(array &$variations, $data = '', $product_type = '') {
+  //~ dpm('toto');
+  //~ if ($product_type == 'accessory' || $product_type == 'clothing') {
+    //~ // Optionally, decode 'json' or 'xml' data passed on the VBO action
+    //~ // configuration page and use that to alter variations.
+    //~ // $array_data = \Drupal::service('serializer')->decode($data, 'json');.
+    //~ foreach ($variations as $variation) {
+      //~ dpm($variation);
+      //~ // Enable core `Serialization' module to decode the string $data.
+      //~ // Do something and save variation.
+      //~ // The parent product will be saved later by the hook caller.
+      //~ // $variation->save();
+    //~ }
+  //~ }
+//~ }
+
+function akiko_commerce_bulk_variation_alter(array &$variations, $data = '', $product_type = '') {
+  dpm('flag');
+  if ($product_type == 'accessory' || $product_type == 'clothing') {
+    foreach ($variations as $variation) { 
+      dpm($variation);
+
+      $title = $variation->getTitle();
+      $product = $variation->getProduct();
+      $categories = $product->get('field_product_category')->getValue();
+      $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($categories[1]['target_id']);
+      $name = $term->name->value;
+      
+      $processed_title = str_replace(' - ', '-' . $name . '-', $title);
+      //dpm($title);
+      $processed_title = str_replace(', ', '-', $processed_title);
+      //dpm($title);
+      $sku = strtolower($processed_title);
+      //dpm($sku);
+        
+      $variation->get('sku')->setValue($sku);
+      $variation->save();
+    }
+  }
+}

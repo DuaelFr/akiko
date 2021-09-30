@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: I7e8fO9DVP6dajBhQXiRkZMgDDegDH1P60DLKcV4KPk
 id: commerce_bulk_variation_duplicate
-label: 'variations akemi'
+label: 'Duplicate variation'
 type: commerce_product_variation
 plugin: commerce_bulk_variation_duplicate
 configuration: {  }
