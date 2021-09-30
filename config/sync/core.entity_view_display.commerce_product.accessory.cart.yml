@@ -21,10 +21,10 @@ content:
     weight: 1
     label: hidden
     settings:
+      deltas: '0'
       image_style: cart_product
-      image_link: ''
-      deltas: 0
-      deltas_reversed: false
+      image_link: content
+      deltas_reversed: 0
     third_party_settings: {  }
     type: image_delta_formatter
     region: content
@@ -34,7 +34,7 @@ content:
     weight: 0
     region: content
     settings:
-      link_to_entity: false
+      link_to_entity: true
     third_party_settings: {  }
 hidden:
   body: true
