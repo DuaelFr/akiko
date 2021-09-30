@@ -24,5 +24,10 @@
       {{ form.actions }}
     </div>
   </div>
-  <div class="akiko-customers-warning">Attention ! Après validation de la commande, plus aucune modification ne sera possible.</div>
+
+  {% set page_url = url("<current>") %}
+  {# On affiche le message suivant seulement si on est sur la page "Vérifier", la dernière page du tunnel de commande. #}
+  {% if '/review' in page_url|render|render %}
+    <div class="akiko-customers-warning">Attention ! Après validation de la commande, plus aucune modification ne sera possible.</div>
+  {% endif %}
 </div>
