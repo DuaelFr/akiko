@@ -1,0 +1,18 @@
+uuid: 27f55eb6-4b51-4a8b-b3ff-bda4e439b77a
+langcode: fr
+status: true
+dependencies: {  }
+id: customer
+label: Client
+weight: -8
+is_admin: null
+permissions:
+  - 'access checkout'
+  - 'create default commerce_order'
+  - 'update default commerce_order'
+  - 'view accessory commerce_product'
+  - 'view clothing commerce_product'
+  - 'view commerce_promotion'
+  - 'view default commerce_order'
+  - 'view online commerce_store'
+  - 'view own commerce_order'

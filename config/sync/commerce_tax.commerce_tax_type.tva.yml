@@ -1,0 +1,9 @@
+uuid: 57ae0679-2c94-4a8a-8b97-6cbb5ec32cd8
+langcode: fr
+status: true
+dependencies: {  }
+id: tva
+label: TVA
+plugin: european_union_vat
+configuration:
+  display_inclusive: false

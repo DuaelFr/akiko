@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * AkikoFairTrade theme for Akiko Drupal Commerce website.
+ */
+
+function aft_preprocess_input(&$variables) {
+  // Gestion du champ input qui permet de modifier la quantité d'un produit
+  // On veut que seuls les nombres pairs soient autorisés.
+  //
+  // On trouve ce champ input dans 3 cas :
+  // ---> cas 1 - Dans la page d'un produit.
+  // On a un seul input puisqu'on a un seul produit.
+  // Son identifiant est "edit-quantity-0-value".
+  // ---> cas 2 - Dans le shopping bag (volet droit).
+  // On a autant d'input que de produits.
+  // Les input n'ont pas d'identifiant.
+  // ---> cas 3 - Dans la page Panier.
+  // Là aussi, on a autant d'input que de produits
+  // L'identifiant de chaque input est de la forme "edit-edit-quantity-xx"
+  // où xx est un incrément allant de 0 à n.
+  //
+  // Pour n'autoriser que des nombres pairs dans les input concernés, on veut que :
+  // - la valeur initiale de l'attribut value soit  égale à 2 (cas 1 seulement),
+  // - la valeur de l'attribut step soit égale à 2 aussi (cas 1, 2 et 3)
+  // - la valeur de l'attribut min soit égale à 2 également (cas 1, 2 et 3).
+  //
+  // Dans le cas 2, le contenu du shopping bag est obtenu grace à un découplage du front
+  // et l'utilisation de commerce_cart_api et de la librairie js Backbone.
+  // le template utilisé est 'commerce-cart-flyout-offcanvas-contents-items.html.twig'.
+  // Ce cas n'est donc pas traité ici mais directement dans le template.
+  // Voir web/themes/custom/aft/templates/commerce-cart-flyout-offcanvas-contents-items.html.twig
+
+  // Les cas 1 et 3 utilisent le meme template : input--form-control--number.html.twig
+  // Dans le cas 1 (page Produit), il faut que le champ input soit à 2 au départ (attribut value="2")
+  // mais il ne faut surtout pas toucher à cet attribut value dans le cas 3.
+  //
+  // Mais comme l'attribut value doit etre initialisé à 2 seulement dans le cas 1,
+  // on ne peut pas gérer ça dans le template. On le fait ici, en testant si on est
+  // dans une page produit ou dans la page Panier.
+  //
+  // Dans les deux cas 1 et 3, les identifiants d'input contiennent tous 'edit-quantity'.
+  if (strpos($variables["element"]["#id"], 'edit-quantity') !== false) {
+    $variables['attributes']->setAttribute('step', 2);
+    $variables['attributes']->setAttribute('min', 2);
+
+    // Et parmi eux, seul l'identifiant du cas 1 ne commence pas par 'edit-edit-quantity'.
+    // Dans ce cas, on peut mettre la valeur initiale de l'input à 2.
+    if (strpos($variables["element"]["#id"], 'edit-edit-quantity') !== 0) {
+      $variables['attributes']->setAttribute('value', 2);
+    }
+  }
+}

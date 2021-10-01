@@ -1,0 +1,23 @@
+uuid: b80be35f-2f15-4273-b2d7-85872f07c737
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.accessory
+    - field.storage.commerce_product.field_length
+id: commerce_product.accessory.field_length
+field_name: field_length
+entity_type: commerce_product
+bundle: accessory
+label: Metrage
+description: 'Indiquer en mètres la quantité de tissu nécessaire à la fabrication de ce produit. Par ex. "1,25"'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: m
+field_type: decimal

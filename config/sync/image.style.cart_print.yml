@@ -1,0 +1,15 @@
+uuid: bd97a8c4-0592-41d5-bbb6-2734aa92ae6f
+langcode: fr
+status: true
+dependencies: {  }
+name: cart_print
+label: 'Imprimé panier (largeur 50)'
+effects:
+  c18cd385-7d1c-4d8a-bb23-40bd7a81f3e1:
+    uuid: c18cd385-7d1c-4d8a-bb23-40bd7a81f3e1
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: null
+      upscale: false

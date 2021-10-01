@@ -1,0 +1,20 @@
+uuid: 60f44dfe-2552-4eb1-9cf9-813443a2d9cd
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - aft
+_core:
+  default_config_hash: EAlCAHiVy5x3aTOW2K9XaWE4kelyfSSSKv8_uiomGJM
+id: aft_local_actions
+theme: aft
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

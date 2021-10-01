@@ -1,0 +1,47 @@
+uuid: 9c90c1ce-62f2-4423-a33a-c382086f0e33
+langcode: fr
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: -7
+is_admin: null
+permissions:
+  - 'access checkout'
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access commerce_product_attribute overview'
+  - 'access commerce_promotion overview'
+  - 'access commerce_store overview'
+  - 'access content overview'
+  - 'access profile overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer commerce_product'
+  - 'administer commerce_product_type'
+  - 'administer commerce_promotion'
+  - 'administer contact forms'
+  - 'administer menu'
+  - 'administer users'
+  - 'create accessory commerce_product'
+  - 'create clothing commerce_product'
+  - 'create page content'
+  - 'delete any accessory commerce_product'
+  - 'delete any clothing commerce_product'
+  - 'delete any page content'
+  - 'edit any page content'
+  - 'manage print commerce_product_variation'
+  - 'manage size_print commerce_product_variation'
+  - 'update any accessory commerce_product'
+  - 'update any clothing commerce_product'
+  - 'update any online commerce_store'
+  - 'update commerce_product_attribute'
+  - 'view accessory commerce_product'
+  - 'view clothing commerce_product'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view commerce_store'
+  - 'view online commerce_store'
+  - 'view own unpublished content'
+  - 'view user email addresses'

@@ -1,0 +1,10 @@
+uuid: 3b900a03-770c-46c9-bd51-bf97681e3bbb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.cart
+label: Panier
+targetEntityType: commerce_product
+cache: true

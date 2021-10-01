@@ -1,0 +1,12 @@
+uuid: acc58193-2626-4b6a-85d1-412f68f3a397
+langcode: fr
+status: true
+dependencies: {  }
+id: clothing
+label: Vêtement
+description: ''
+variationType: size_print
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

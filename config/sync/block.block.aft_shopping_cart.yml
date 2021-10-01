@@ -1,0 +1,25 @@
+uuid: 2487e448-31cc-49d5-af2f-e7df5cc4e907
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_cart_flyout
+  theme:
+    - aft
+_core:
+  default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
+id: aft_shopping_cart
+theme: aft
+region: top_navigation
+weight: -7
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  use_quantity_count: false
+  dropdown: true
+  item_text: items
+visibility: {  }

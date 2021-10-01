@@ -1,0 +1,15 @@
+uuid: e0739d0b-e6f9-4473-b30b-2e15ed960ca3
+langcode: fr
+status: true
+dependencies: {  }
+name: cart_product
+label: 'Produit panier (140x140)'
+effects:
+  f2d838dd-85c9-4249-89a4-52dff114fc35:
+    uuid: f2d838dd-85c9-4249-89a4-52dff114fc35
+    id: image_scale
+    weight: 1
+    data:
+      width: 140
+      height: 140
+      upscale: false

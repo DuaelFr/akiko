@@ -1,0 +1,41 @@
+uuid: c934c873-1190-427b-b5f5-9a658bb158b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothing
+    - core.entity_view_mode.commerce_product.summary
+    - field.field.commerce_product.clothing.body
+    - field.field.commerce_product.clothing.field_images
+    - field.field.commerce_product.clothing.field_length
+    - field.field.commerce_product.clothing.field_product_category
+    - image.style.cart_product
+  module:
+    - image_delta_formatter
+id: commerce_product.clothing.summary
+targetEntityType: commerce_product
+bundle: clothing
+mode: summary
+content:
+  field_images:
+    weight: 0
+    label: hidden
+    settings:
+      deltas: '0'
+      image_style: cart_product
+      image_link: ''
+      deltas_reversed: 0
+    third_party_settings: {  }
+    type: image_delta_formatter
+    region: content
+hidden:
+  body: true
+  created: true
+  field_length: true
+  field_product_category: true
+  langcode: true
+  search_api_excerpt: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

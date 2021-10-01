@@ -1,0 +1,13 @@
+uuid: 5b7c8c6e-b889-4d97-9c33-42a4d8ed3c1e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: I7e8fO9DVP6dajBhQXiRkZMgDDegDH1P60DLKcV4KPk
+id: commerce_bulk_variation_duplicate
+label: 'Duplicate variation'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_duplicate
+configuration: {  }

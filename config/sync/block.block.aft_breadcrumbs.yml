@@ -1,0 +1,22 @@
+uuid: 59376178-5f7d-4c36-9fac-e1dc40584e1f
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - aft
+_core:
+  default_config_hash: N1cq7jc4R0m_29rs2Jnz0WjcslEeZ0AsN9Od1-_vW9s
+id: aft_breadcrumbs
+theme: aft
+region: highlighted
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

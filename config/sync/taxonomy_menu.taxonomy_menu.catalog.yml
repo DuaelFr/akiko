@@ -1,0 +1,16 @@
+uuid: 5be69943-2ccb-4d87-a3b5-f6b028d3d873
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.catalog
+    - taxonomy.vocabulary.product_categories
+id: catalog
+label: Catalogue
+vocabulary: product_categories
+depth: 0
+menu: catalog
+expanded: false
+menu_parent: 'admin:'
+description_field_name: null
+use_term_weight_order: true

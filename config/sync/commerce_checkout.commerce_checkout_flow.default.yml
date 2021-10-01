@@ -1,7 +1,11 @@
 uuid: e80feb39-edbd-406b-974b-4aeb1038e181
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+    - email_registration
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
 id: default
@@ -12,7 +16,7 @@ configuration:
   display_checkout_progress_breadcrumb_links: false
   panes:
     login:
-      allow_guest_checkout: true
+      allow_guest_checkout: false
       allow_registration: false
       step: login
       weight: 0
@@ -20,15 +24,12 @@ configuration:
       double_entry: true
       step: order_information
       weight: 1
-    billing_information:
-      step: order_information
-      weight: 2
     review:
       step: review
       weight: 3
     completion_message:
       message:
-        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        value: 'Votre numéro de commande est [commerce_order:order_number]. Vous pouvez voir votre commande sur la page de votre compte.'
         format: plain_text
       step: complete
       weight: 4
@@ -36,3 +37,25 @@ configuration:
       view: null
       step: _sidebar
       weight: 5
+    completion_register:
+      step: complete
+      weight: 10
+    payment_information:
+      step: order_information
+      weight: 10
+    payment_process:
+      capture: true
+      step: payment
+      weight: 10
+    coupon_redemption:
+      allow_multiple: false
+      step: _sidebar
+      weight: 10
+    email_registration_login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 10
+    email_registration_completion_registration:
+      step: _disabled
+      weight: 10

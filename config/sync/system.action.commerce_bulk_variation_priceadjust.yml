@@ -1,0 +1,13 @@
+uuid: 4086ed8c-d49c-4d9b-af31-faccc778a7e3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: 7-eJzvNBKl6xN_NrA5WZ1NIgOA5pfH8fo-jzC3q9AY0
+id: commerce_bulk_variation_priceadjust
+label: 'Adjust Price'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_priceadjust
+configuration: {  }

@@ -1,0 +1,13 @@
+uuid: 93a42f42-3319-4748-9569-fabdaa4f57dc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: GzZ-HiLbWh_hmd4UH6BdCVWTEGs16JA097vbjZdlpGQ
+id: commerce_bulk_order_zanonymize
+label: 'Anonymize Order'
+type: commerce_order
+plugin: commerce_bulk_order_zanonymize
+configuration: {  }

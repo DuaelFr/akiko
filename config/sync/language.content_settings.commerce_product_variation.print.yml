@@ -1,0 +1,11 @@
+uuid: 3542e8ae-75d8-4c02-9e13-db445c3957b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.print
+id: commerce_product_variation.print
+target_entity_type_id: commerce_product_variation
+target_bundle: print
+default_langcode: site_default
+language_alterable: false
