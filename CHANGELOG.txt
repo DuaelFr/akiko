@@ -1,0 +1,197 @@
+Akiko v1.0 / 01 oct 2021
+------------------------
+  * Modif de paramétrage du view mode 'Default' des types de produit Accessoire et Vêtement pour corriger le dysfonctionnement du diaporama d'un produit : Les photos ne sont plus liées au contenu.
+  * Modif de la vue custom order_data_export : suppression de l'affichage de items de commande 10 par 10.
+  * Modif du template commerce-checkout-form--with-sidebar.html.twig pour que le message d'alerte 'Attention! Après validation de la commande...' ne s'affiche que sur la dernière page du tunnel de commande.
+  * Modification de l'affichage des accessoires et des vêtements dans le panier : le titre du produit et son image sont maintenant cliquables pour revenir au produit et ajouter d'autres variations au panier sans avoir à repasser par le catalogue.
+  * Suppressions des infos de debug oubliées dans la fonction akiko_commerce_bulk_variation_alter().
+  * Ajout de code au module akiko : implémentation du hook_commerce_bulk_variation_alter() pour pouvoir générer automatiquement les SKU des variations d'un produit au format nomProduit-categorie-couleur-taille.
+  * Installation du module commerce_bulk pour la génération automatique de toutes les variations d'un produit.
+  * Reconstruction de la vue 'Métrages' en vue 'Export des données de commande' et remise à l'état initial des vues 'Commandes' (commerce_orders) et 'Eléments de la commande' (commerce_order_item_table).
+  * Modification de la page Produit pour le type de produit Accessoire : Suppression de l'affichage des champs Catégorie et Métrage, remontée du champ Description juste sous le prix du produit.
+  * Modification de la page Produit pour le type de produit Vêtement : Suppression de l'affichage des champs Catégorie et Métrage, remontée du champ Description juste sous le prix du produit.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Reparamétrage des styles d'image et du dossier de stockage pour accessoires
+  * CSS pour les imprimés dans les fiches produits
+  * Modification de la vue Commandes (de Drupal Commerce) pour y ajouter l'export des données et création du backup de cette vue (commerce_orders_backup).
+  * Création de la vue Métrage et de l'export des données correspondantes au format xlsx.
+  * Ajout du module xls_serialization pour pouvoir exporter les données au format xls avec views_data_export.
+  * Modification de paramétrage de drupal-scaffold dans composer.json pour éviter que le fichier development.services.yml soit ramené à son état initial à chaque nouvel ajout  avec Composer (composer require).
+  * Ajout du module views_data_export pour l'export des données de commande.
+  * Installation du module kint pour le debuggage.
+  * Différents ajouts CSS pour le thème
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Modification du CSS du thème liste produits et fiche produit
+  * Modification du logo du thème aft
+  * Modification du thème Belgrade concernant le schéma de couleurs
+  * Modif des 2 types de produit  : Ajout du champ Métrage.
+  * Customisation du template commerce-checkout-form--with-sidebar.html.twig : Ajout du message d'avertissement de validation définitive.
+  * Modif du type de contenu Page simple : Ajout du champ Fichiers(s).
+  * Modif du type de contenu Page simple : Peut maintenant être rattaché au menu Pied de page.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Modif du template field--commerce-price.html.twig. Le suffixe 'HT' n'est maintenant plus affiché en bas de la page Panier parce qu'il n'avait pas à apparaitre à cet endroit.
+  * Nunito Google Fonts
+  * Modif paramétrage couleurs dans Belgrade : choix du jeu de couleurs 'Marine'.
+  * Création du rôle webmaster et premier réglage des droits.
+  * Modif de config du type de profil 'Client'. Affichage de l'adresse dans le formulaire utilisateur.
+  * Customisation thème : Création des templates nécessaires à l'affichage des mentions HT et TTC partout où c'est nécessaire.
+  * Paramétrages boutique : Interdiction de commander pour les utilisateurs anonymes. Il faut être connecté pour voir le catalogue mais 2 précautions valent mieux qu'une.
+  * Paramétrages boutique : correction d'un affichage incomplet : suppression de l'affichage du label 'Prix' dans la page produit d'un accessoire.
+  * Paramétrages boutique : création du type de taxe TVA.
+  * Install du module potx.
+  * Export d'une modif de l'affichage d'un type d'élément de commande due à l'activation du module search_api. Cette modif a été générée lors de la sauvegarde sans modif de la page 'Gérer l'affichage' et n'est pas supprimable avec un drush cim.
+  * Gestion de l'achat de produits en quantités paires : customisation du template commerce-cart-flyout-offcanvas-contents-items.html.twig pour rendre le champ quantité non modifiable (parce que trop difficile de contrôler les quantités paires dans ce bloc généré par découplage avec la librairie javascript Backbone).
+  * Gestion de l'achat de produits en quantités paires : Customisation du template de rendu input--form-control--number.html.twig pour interdire les nombres impairs, et création de la librairie javascript custom aft_custom_form_elements.js pour incrémenter 2 par 2.
+  * Suppression du thème Akiko.
+  * Paramétrage du thème : Changement du schéma de couleur Belgrade : Sélection du schéma 'Apple Blossom'.
+  * Création et activation du nouveau thème AkikoFairTrade (aft).
+  * Paramétrages boutique : mise en forme de la colonne 'Résumé de la commande'... suite.
+  * Paramétrages boutique : mise en forme de la colonne 'Résumé de la commande'.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Création du menu 'Catalogue menu navigation' et placement de ce bloc dans la région Navigation, comme fait dans la démo Commerce.
+  * Customisation du thème Belgrade : Suppression du bloc 'Not a member yet?' qui est affiché par Belgrade même si les utilisateurs n'ont pas le droit de créer de compte.
+  * Paramétrages boutique : Seul un admin a le droit de créer un compte.
+  * Abandon du code custom de redirection forcée vers la page de connexion. A la place, installation du module require_login.
+  * test modif color
+  * Traduction en français du message affiché en fin de commande.
+  * Création de la passerelle de paiement 'Paiement à réception de la commande'.
+  * Réglage des droits Commerce pour le rôle Client.
+  * Création du rôle Client.
+  * Mise en place de la redirection des utilisateurs anonymes vers le formulaire de connexion.
+  * Install et activation du module contrib email_registration.
+  * Paramétrage du contenu du panier : Réglages pour le type de produit Vêtement appliqué aussi au type de produit Accessoire.
+  * Paramétrage du contenu du panier : Drans la colonne Element, remplacement du prix affiché par défaut par le nom du produit, sa photo, l'imprimé choisi et la taille choisie.
+  * Install et activation du module contrib commerce_cart_flyout.
+  * Modification du motif pathauto des produits (pour être simmilaire à la démo Commerce).
+  * Création du style d'image Produit et utilisation de ce style dans la page détaillée d'un produit.
+  * Le catalogue des produits est paramétré comme page par défaut du site.
+  * Le comportement du fil d'Ariane étant difficile à comprendre, désactivation de son affichage.
+  * Fonction hook_preprocess_breadcrumbs() copié/collé depuis Commerce Démo vers le module custom akiko.
+  * Modification de la facette Catégories pour afficher la hiérarchie des termes.
+  * Création du module custom akiko.
+  * Création du motif pathauto pour Produit.
+  * Suppression de l'affichage du titre de page lorsqu'on est dans les pages du catalogue.
+  * Modification du type de produit Accessoire : Ajout des champs Catégorie et Photos, activation du view mode Catalogue.
+  * Modification de paramétrage de la facette Catégories.
+  * Install et activation du module taxonomy_term_depth
+  * Ajout des fichiers générés par le module Tour pour le module Search API.
+  * Création du view mode calalog et du style d'image catalog.
+  * Création de la vue Catalogue des produits et paramétrage de la recherche à facettes (module facets) sur les catégories de produit.
+  * Paramétrage du module search_api : Création de l'index des produits.
+  * Install et activation des modules search_api, search_api_db, facets, facets_pretty_paths et image_delta_formatter.
+  * Classification produits : Création du menu Catalogue, du menu de taxonomie Catalogue utilisant le menu Catalogue et placement du bloc de menu Catalogue dans la région Entête.
+  * Paramétrages boutique : Remplacement de simple_hierarchical_select par term_reference_tree pour le paramétrage du champ Catégorie de produit.
+  * Installation et activation des modules contrib term_reference_tree et taxonomy_menu.
+  * Paramétrages boutique : Simplification des types de produit. Tous les types précédents supprimés et remplacés par seulement 2 types, vêtement et accessoire.
+  * Paramétrages boutique : Ajout des champs Photos et Catégorie de produit à tous les types de produit.
+  * Classification produits : Ajout du champ Catégorie de produit au type de produit Top.
+  * Classification produits : Création du vocabulaire 'Catégories de produit' et de ses termes.
+  * Paramétrages boutique : Création d'un logo provisoire au format svg.
+  * Paramétrages boutique : Ajout du champ quantité à la page d'un produit.
+  * Paramétrages boutique : Ajout du champ Photos (field_images) au type de produit 'Top'.
+  * Paramétrages boutique : Création des types de produit.
+  * Paramétrages boutique : Création des types de variation de produit 'Taille et imprimé' et 'Imprimé'.
+  * Paramétrages boutique : Création des attributs Taille et Imprimé.
+  * Paramétrages boutique : Suppression des attributs inutiles Couleur et Motif.
+  * Paramétrage boutique : pays par défaut = France, premier jour semaine = Lundi.
+  * Paramétrages boutique : Suppression de la devise 'dollar US'.
+  * Création et activation du sous-thème custom Akiko.
+  * Initial commit  * Modif de paramétrage du view mode 'Default' des types de produit Accessoire et Vêtement pour corriger le dysfonctionnement du diaporama d'un produit : Les photos ne sont plus liées au contenu.
+  * Modif de la vue custom order_data_export : suppression de l'affichage de items de commande 10 par 10.
+  * Modif du template commerce-checkout-form--with-sidebar.html.twig pour que le message d'alerte 'Attention! Après validation de la commande...' ne s'affiche que sur la dernière page du tunnel de commande.
+  * Modification de l'affichage des accessoires et des vêtements dans le panier : le titre du produit et son image sont maintenant cliquables pour revenir au produit et ajouter d'autres variations au panier sans avoir à repasser par le catalogue.
+  * Suppressions des infos de debug oubliées dans la fonction akiko_commerce_bulk_variation_alter().
+  * Ajout de code au module akiko : implémentation du hook_commerce_bulk_variation_alter() pour pouvoir générer automatiquement les SKU des variations d'un produit au format nomProduit-categorie-couleur-taille.
+  * Installation du module commerce_bulk pour la génération automatique de toutes les variations d'un produit.
+  * Reconstruction de la vue 'Métrages' en vue 'Export des données de commande' et remise à l'état initial des vues 'Commandes' (commerce_orders) et 'Eléments de la commande' (commerce_order_item_table).
+  * Modification de la page Produit pour le type de produit Accessoire : Suppression de l'affichage des champs Catégorie et Métrage, remontée du champ Description juste sous le prix du produit.
+  * Modification de la page Produit pour le type de produit Vêtement : Suppression de l'affichage des champs Catégorie et Métrage, remontée du champ Description juste sous le prix du produit.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Reparamétrage des styles d'image et du dossier de stockage pour accessoires
+  * CSS pour les imprimés dans les fiches produits
+  * Modification de la vue Commandes (de Drupal Commerce) pour y ajouter l'export des données et création du backup de cette vue (commerce_orders_backup).
+  * Création de la vue Métrage et de l'export des données correspondantes au format xlsx.
+  * Ajout du module xls_serialization pour pouvoir exporter les données au format xls avec views_data_export.
+  * Modification de paramétrage de drupal-scaffold dans composer.json pour éviter que le fichier development.services.yml soit ramené à son état initial à chaque nouvel ajout  avec Composer (composer require).
+  * Ajout du module views_data_export pour l'export des données de commande.
+  * Installation du module kint pour le debuggage.
+  * Différents ajouts CSS pour le thème
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Modification du CSS du thème liste produits et fiche produit
+  * Modification du logo du thème aft
+  * Modification du thème Belgrade concernant le schéma de couleurs
+  * Modif des 2 types de produit  : Ajout du champ Métrage.
+  * Customisation du template commerce-checkout-form--with-sidebar.html.twig : Ajout du message d'avertissement de validation définitive.
+  * Modif du type de contenu Page simple : Ajout du champ Fichiers(s).
+  * Modif du type de contenu Page simple : Peut maintenant être rattaché au menu Pied de page.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Modif du template field--commerce-price.html.twig. Le suffixe 'HT' n'est maintenant plus affiché en bas de la page Panier parce qu'il n'avait pas à apparaitre à cet endroit.
+  * Nunito Google Fonts
+  * Modif paramétrage couleurs dans Belgrade : choix du jeu de couleurs 'Marine'.
+  * Création du rôle webmaster et premier réglage des droits.
+  * Modif de config du type de profil 'Client'. Affichage de l'adresse dans le formulaire utilisateur.
+  * Customisation thème : Création des templates nécessaires à l'affichage des mentions HT et TTC partout où c'est nécessaire.
+  * Paramétrages boutique : Interdiction de commander pour les utilisateurs anonymes. Il faut être connecté pour voir le catalogue mais 2 précautions valent mieux qu'une.
+  * Paramétrages boutique : correction d'un affichage incomplet : suppression de l'affichage du label 'Prix' dans la page produit d'un accessoire.
+  * Paramétrages boutique : création du type de taxe TVA.
+  * Install du module potx.
+  * Export d'une modif de l'affichage d'un type d'élément de commande due à l'activation du module search_api. Cette modif a été générée lors de la sauvegarde sans modif de la page 'Gérer l'affichage' et n'est pas supprimable avec un drush cim.
+  * Gestion de l'achat de produits en quantités paires : customisation du template commerce-cart-flyout-offcanvas-contents-items.html.twig pour rendre le champ quantité non modifiable (parce que trop difficile de contrôler les quantités paires dans ce bloc généré par découplage avec la librairie javascript Backbone).
+  * Gestion de l'achat de produits en quantités paires : Customisation du template de rendu input--form-control--number.html.twig pour interdire les nombres impairs, et création de la librairie javascript custom aft_custom_form_elements.js pour incrémenter 2 par 2.
+  * Suppression du thème Akiko.
+  * Paramétrage du thème : Changement du schéma de couleur Belgrade : Sélection du schéma 'Apple Blossom'.
+  * Création et activation du nouveau thème AkikoFairTrade (aft).
+  * Paramétrages boutique : mise en forme de la colonne 'Résumé de la commande'... suite.
+  * Paramétrages boutique : mise en forme de la colonne 'Résumé de la commande'.
+  * Merge branch 'develop' of https://github.com/jabberwooki/akiko into develop
+  * Création du menu 'Catalogue menu navigation' et placement de ce bloc dans la région Navigation, comme fait dans la démo Commerce.
+  * Customisation du thème Belgrade : Suppression du bloc 'Not a member yet?' qui est affiché par Belgrade même si les utilisateurs n'ont pas le droit de créer de compte.
+  * Paramétrages boutique : Seul un admin a le droit de créer un compte.
+  * Abandon du code custom de redirection forcée vers la page de connexion. A la place, installation du module require_login.
+  * test modif color
+  * Traduction en français du message affiché en fin de commande.
+  * Création de la passerelle de paiement 'Paiement à réception de la commande'.
+  * Réglage des droits Commerce pour le rôle Client.
+  * Création du rôle Client.
+  * Mise en place de la redirection des utilisateurs anonymes vers le formulaire de connexion.
+  * Install et activation du module contrib email_registration.
+  * Paramétrage du contenu du panier : Réglages pour le type de produit Vêtement appliqué aussi au type de produit Accessoire.
+  * Paramétrage du contenu du panier : Drans la colonne Element, remplacement du prix affiché par défaut par le nom du produit, sa photo, l'imprimé choisi et la taille choisie.
+  * Install et activation du module contrib commerce_cart_flyout.
+  * Modification du motif pathauto des produits (pour être simmilaire à la démo Commerce).
+  * Création du style d'image Produit et utilisation de ce style dans la page détaillée d'un produit.
+  * Le catalogue des produits est paramétré comme page par défaut du site.
+  * Le comportement du fil d'Ariane étant difficile à comprendre, désactivation de son affichage.
+  * Fonction hook_preprocess_breadcrumbs() copié/collé depuis Commerce Démo vers le module custom akiko.
+  * Modification de la facette Catégories pour afficher la hiérarchie des termes.
+  * Création du module custom akiko.
+  * Création du motif pathauto pour Produit.
+  * Suppression de l'affichage du titre de page lorsqu'on est dans les pages du catalogue.
+  * Modification du type de produit Accessoire : Ajout des champs Catégorie et Photos, activation du view mode Catalogue.
+  * Modification de paramétrage de la facette Catégories.
+  * Install et activation du module taxonomy_term_depth
+  * Ajout des fichiers générés par le module Tour pour le module Search API.
+  * Création du view mode calalog et du style d'image catalog.
+  * Création de la vue Catalogue des produits et paramétrage de la recherche à facettes (module facets) sur les catégories de produit.
+  * Paramétrage du module search_api : Création de l'index des produits.
+  * Install et activation des modules search_api, search_api_db, facets, facets_pretty_paths et image_delta_formatter.
+  * Classification produits : Création du menu Catalogue, du menu de taxonomie Catalogue utilisant le menu Catalogue et placement du bloc de menu Catalogue dans la région Entête.
+  * Paramétrages boutique : Remplacement de simple_hierarchical_select par term_reference_tree pour le paramétrage du champ Catégorie de produit.
+  * Installation et activation des modules contrib term_reference_tree et taxonomy_menu.
+  * Paramétrages boutique : Simplification des types de produit. Tous les types précédents supprimés et remplacés par seulement 2 types, vêtement et accessoire.
+  * Paramétrages boutique : Ajout des champs Photos et Catégorie de produit à tous les types de produit.
+  * Classification produits : Ajout du champ Catégorie de produit au type de produit Top.
+  * Classification produits : Création du vocabulaire 'Catégories de produit' et de ses termes.
+  * Paramétrages boutique : Création d'un logo provisoire au format svg.
+  * Paramétrages boutique : Ajout du champ quantité à la page d'un produit.
+  * Paramétrages boutique : Ajout du champ Photos (field_images) au type de produit 'Top'.
+  * Paramétrages boutique : Création des types de produit.
+  * Paramétrages boutique : Création des types de variation de produit 'Taille et imprimé' et 'Imprimé'.
+  * Paramétrages boutique : Création des attributs Taille et Imprimé.
+  * Paramétrages boutique : Suppression des attributs inutiles Couleur et Motif.
+  * Paramétrage boutique : pays par défaut = France, premier jour semaine = Lundi.
+  * Paramétrages boutique : Suppression de la devise 'dollar US'.
+  * Création et activation du sous-thème custom Akiko.
+  * Initial commit
