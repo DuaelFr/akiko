@@ -1,3 +1,7 @@
+Hotfix suppression_pagination_catalogue / 05 oct 2021
+----------------------------------------------------
+  * Modif de paramétrage de la vue Catalogue : Suppression de la pagination.
+
 Akiko v1.0 / 01 oct 2021
 ------------------------
   * Modif de paramétrage du view mode 'Default' des types de produit Accessoire et Vêtement pour corriger le dysfonctionnement du diaporama d'un produit : Les photos ne sont plus liées au contenu.
