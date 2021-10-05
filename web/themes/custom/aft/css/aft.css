@@ -150,6 +150,43 @@ body{
   font-size: 13px;
   margin-top: 10px;
 }
+.view-commerce-cart-form .field--name-attribute-print .field--name-field-image img{
+  border-radius: 50%;
+}
+.view-commerce-cart-form .field--name-attribute-print{
+  text-align: center;
+  padding: 0 20px;
+}
+.view-commerce-cart-form .field--name-attribute-size{
+ font-weight: 700; 
+ color: #bf2b6b;
+}
+.view-commerce-cart-form .field--name-title a{
+  text-transform: uppercase;
+  font-weight: 700; 
+  color: #bf2b6b;
+  text-decoration: underline;
+}
+.view-commerce-cart-form .field--name-title a:hover{
+  color:#000;
+}
+
+/*Résumé Panier*/
+.checkout-order-summary .field--name-field-images{
+display: none;
+}
+.checkout-order-summary table{
+  margin-bottom: 15px;
+}
+.checkout-order-summary tr{
+  border-bottom: 1px solid #000;
+}
+.checkout-order-summary td{
+  padding: 15px;
+}
+.layout-region-checkout-secondary .checkout-pane-order-summary{
+  padding: 20px;
+}
 
 /*Page adresse*/
 .form-control{
