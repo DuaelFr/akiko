@@ -1,3 +1,7 @@
+Akiko v1.02 / 05 oct 2021
+-------------------------
+  * Modif de paramétrage du résumé de commande : Correction du mauvais affichage de chaque item en supprimant l'affichage de l'élément Produit dans le display mode 'Résumé' (Commerce > Configuration > Products > Product variation types).
+
 Akiko v1.01 / 05 oct 2021
 -------------------------
   * modif css table panier et résumé panier
