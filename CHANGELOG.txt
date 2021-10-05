@@ -1,3 +1,7 @@
+Akiko v1.01 / 05 oct 2021
+-------------------------
+  * modif css table panier et résumé panier
+
 Hotfix modification_css_resume_commande / 05 oct 2021
 -----------------------------------------------------
   * modif css table panier et résumé panier 
