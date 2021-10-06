@@ -1,3 +1,20 @@
+Akiko v1.02 / 05 oct 2021
+-------------------------
+  * Modif de paramétrage du résumé de commande : Correction du mauvais affichage de chaque item en supprimant l'affichage de l'élément Produit dans le display mode 'Résumé' (Commerce > Configuration > Products > Product variation types).
+
+Akiko v1.01 / 05 oct 2021
+-------------------------
+  * modif css table panier et résumé panier
+
+Hotfix modification_css_resume_commande / 05 oct 2021
+-----------------------------------------------------
+  * modif css table panier et résumé panier 
+
+
+Hotfix suppression_pagination_catalogue / 05 oct 2021
+----------------------------------------------------
+  * Modif de paramétrage de la vue Catalogue : Suppression de la pagination.
+
 Akiko v1.0 / 01 oct 2021
 ------------------------
   * Modif de paramétrage du view mode 'Default' des types de produit Accessoire et Vêtement pour corriger le dysfonctionnement du diaporama d'un produit : Les photos ne sont plus liées au contenu.
