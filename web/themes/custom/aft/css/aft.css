@@ -136,10 +136,13 @@ body{
 .commerce-product--full .attribute-widgets .product--rendered-attribute .form-radio:checked ~ label.option{
   border:none;
 }
-.commerce-product--full .attribute-widgets .product--rendered-attribute .form-radio:checked ~ label.option .field.field--name-field-image{
+.commerce-product--full .attribute-widgets .product--rendered-attribute .form-radio:checked ~ label.option .field.field--name-field-image img{
   border-radius: 100%;
   padding: 5px;
   border: 2px solid #bf2b6b;
+}
+.commerce-product--full .field--name-variations .field--item{
+  justify-content: center;
 }
 
 /*Page Panier*/
