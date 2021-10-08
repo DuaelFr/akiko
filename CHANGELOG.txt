@@ -1,3 +1,8 @@
+Akiko v1.03 / 08 oct 2021
+-------------------------
+  * Modif couleur p du message d'alerte
+  * CSS fiche produit variations
+
 Akiko v1.02 / 05 oct 2021
 -------------------------
   * Modif de paramétrage du résumé de commande : Correction du mauvais affichage de chaque item en supprimant l'affichage de l'élément Produit dans le display mode 'Résumé' (Commerce > Configuration > Products > Product variation types).
