@@ -74,3 +74,7 @@ ehthumbs_vista.db
 
 # Fichiers history des commandes passées dans le terminal
 /history/
+
+# Fichiers d'export de données de commandes générés via drush : drush views-data-export (vde)
+/views_data_exports/
+ 

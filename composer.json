@@ -127,6 +127,11 @@
             "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
+        },
+        "patches": {
+            "drupal/views_data_export": {
+                "Support views data export using drush": "https://www.drupal.org/files/issues/2021-06-30/2887450-51.patch"     
+            }
         }
     }
 }
