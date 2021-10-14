@@ -1,3 +1,8 @@
+Akiko v1.04 / 14 oct 2021
+------------------------
+  * Patch du module views_data_export pour pouvoir exporter des données via drush.
+  * Ajout des droits manquants à webmaster pour les Commandes et les Promotions.
+
 Akiko v1.03 / 08 oct 2021
 -------------------------
   * Modif couleur p du message d'alerte
