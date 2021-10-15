@@ -1,3 +1,8 @@
+Akiko v1.05 / 15 oct 2021
+-------------------------
+  * Ajout au rôle webmaster la permission 'Utiliser le site en mode maintenance.
+  * Modification de la vue d'export des commandes : l'export en xlsx est remplacé par un export en csv, l'export en mode batch au format xlsx étant buggé.
+
 Akiko v1.04 / 14 oct 2021
 ------------------------
   * Patch du module views_data_export pour pouvoir exporter des données via drush.
