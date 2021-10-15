@@ -1195,6 +1195,7 @@ display:
         title: false
         group_by: false
         sorts: false
+        pager: false
       filters:
         state:
           id: state
@@ -1270,6 +1271,11 @@ display:
           entity_type: commerce_order
           entity_field: uid
           plugin_id: standard
+      pager:
+        type: some
+        options:
+          items_per_page: 25
+          offset: null
     cache_metadata:
       max-age: -1
       contexts:
