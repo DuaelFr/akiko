@@ -16,6 +16,7 @@ permissions:
   - 'access commerce_store overview'
   - 'access content overview'
   - 'access profile overview'
+  - 'access site in maintenance mode'
   - 'access toolbar'
   - 'access user profiles'
   - 'add commerce_log commerce_order admin comment'
