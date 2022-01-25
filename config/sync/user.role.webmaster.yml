@@ -1,7 +1,21 @@
 uuid: 9c90c1ce-62f2-4423-a33a-c382086f0e33
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - commerce
+    - commerce_checkout
+    - commerce_order
+    - commerce_product
+    - commerce_promotion
+    - commerce_store
+    - contact
+    - node
+    - profile
+    - system
+    - toolbar
 id: webmaster
 label: Webmaster
 weight: -7
@@ -44,6 +58,7 @@ permissions:
   - 'manage size_print commerce_product_variation'
   - 'update any accessory commerce_product'
   - 'update any clothing commerce_product'
+  - 'update any commerce_promotion'
   - 'update any online commerce_store'
   - 'update commerce_product_attribute'
   - 'update commerce_promotion'

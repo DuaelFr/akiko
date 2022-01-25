@@ -17,9 +17,9 @@ plugin: commerce_cart
 settings:
   id: commerce_cart
   label: 'Shopping Cart'
-  provider: commerce_cart
   label_display: '0'
-  use_quantity_count: false
+  provider: commerce_cart
   dropdown: true
+  use_quantity_count: false
   item_text: items
 visibility: {  }

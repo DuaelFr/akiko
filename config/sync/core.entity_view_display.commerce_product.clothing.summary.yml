@@ -18,7 +18,7 @@ bundle: clothing
 mode: summary
 content:
   field_images:
-    weight: 0
+    type: image_delta_formatter
     label: hidden
     settings:
       deltas: '0'
@@ -26,7 +26,7 @@ content:
       image_link: ''
       deltas_reversed: 0
     third_party_settings: {  }
-    type: image_delta_formatter
+    weight: 0
     region: content
 hidden:
   body: true

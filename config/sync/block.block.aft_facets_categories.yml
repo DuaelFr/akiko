@@ -18,11 +18,11 @@ plugin: 'facet_block:product_categories'
 settings:
   id: 'facet_block:product_categories'
   label: Catégories
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: facets_categories
 visibility:
   request_path:
     id: request_path
-    pages: "/produits\r\n/produits/*"
     negate: false
+    pages: "/produits\r\n/produits/*"

@@ -19,8 +19,6 @@ mode: catalog
 content:
   field_images:
     type: image_delta_formatter
-    weight: 1
-    region: content
     label: hidden
     settings:
       deltas: '0'
@@ -28,14 +26,16 @@ content:
       image_link: content
       deltas_reversed: 0
     third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: 0
+    weight: 1
     region: content
+  title:
+    type: string
+    label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   created: true

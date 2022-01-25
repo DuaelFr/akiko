@@ -15,22 +15,22 @@ bundle: print
 mode: cart
 content:
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: cart_print
       image_link: ''
+      image_style: cart_print
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   name:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

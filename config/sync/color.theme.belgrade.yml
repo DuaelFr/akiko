@@ -5,9 +5,9 @@ palette:
   dark: '#000000'
   text: '#000000'
   background: '#f3f3f3'
-logo: 'public://color/belgrade-09d3f1ad/logo.svg'
+logo: 'public://color/belgrade-6bb6d816/logo.svg'
 stylesheets:
-  - 'public://color/belgrade-09d3f1ad/color.css'
+  - 'public://color/belgrade-6bb6d816/color.css'
 files:
-  - 'public://color/belgrade-09d3f1ad/logo.svg'
-  - 'public://color/belgrade-09d3f1ad/color.css'
+  - 'public://color/belgrade-6bb6d816/logo.svg'
+  - 'public://color/belgrade-6bb6d816/color.css'
