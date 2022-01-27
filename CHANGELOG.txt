@@ -1,3 +1,10 @@
+
+Akiko v1.06 / 27 jan 2022
+-------------------------
+  * Mise à jour de facets (1.8 -> 2.0.1) + facets_pretty_paths (1.1 -> 1.2) : La version 1.8 de Facets n'était plus supportée.
+  * Mise à jour de sécurité janvier 2022 : noyau + admin_toolbar, commerce.
+  * Modification de paramétrage de la vue order_data_export : Ajout d'une pagination 25 items au display 'Tous les items' pour permettre l'affichage de cette page.
+
 Akiko v1.05 / 15 oct 2021
 -------------------------
   * Ajout au rôle webmaster la permission 'Utiliser le site en mode maintenance.
