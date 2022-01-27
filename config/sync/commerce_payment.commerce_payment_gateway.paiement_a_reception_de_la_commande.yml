@@ -7,13 +7,13 @@ label: 'Paiement à réception de la commande'
 weight: null
 plugin: manual
 configuration:
-  instructions:
-    value: 'Vous payer à la réception de la commande.'
-    format: plain_text
   display_label: Manual
   mode: n/a
   payment_method_types:
     - credit_card
   collect_billing_information: true
+  instructions:
+    value: 'Vous payer à la réception de la commande.'
+    format: plain_text
 conditions: {  }
 conditionOperator: AND

@@ -18,7 +18,7 @@ bundle: accessory
 mode: catalog
 content:
   field_images:
-    weight: 1
+    type: image_delta_formatter
     label: hidden
     settings:
       image_style: catalog
@@ -26,16 +26,16 @@ content:
       deltas: 0
       deltas_reversed: false
     third_party_settings: {  }
-    type: image_delta_formatter
+    weight: 1
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   created: true

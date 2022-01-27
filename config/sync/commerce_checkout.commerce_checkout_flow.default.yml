@@ -8,35 +8,35 @@ dependencies:
     - email_registration
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
-id: default
 label: 'Par défaut'
+id: default
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
   display_checkout_progress_breadcrumb_links: false
   panes:
     login:
-      allow_guest_checkout: false
-      allow_registration: false
       step: login
       weight: 0
+      allow_guest_checkout: false
+      allow_registration: false
     contact_information:
-      double_entry: true
       step: order_information
       weight: 1
+      double_entry: true
     review:
       step: review
       weight: 3
     completion_message:
+      step: complete
+      weight: 4
       message:
         value: 'Votre numéro de commande est [commerce_order:order_number]. Vous pouvez voir votre commande sur la page de votre compte.'
         format: plain_text
-      step: complete
-      weight: 4
     order_summary:
-      view: null
       step: _sidebar
       weight: 5
+      view: null
     completion_register:
       step: complete
       weight: 10
@@ -44,18 +44,18 @@ configuration:
       step: order_information
       weight: 10
     payment_process:
-      capture: true
       step: payment
       weight: 10
+      capture: true
     coupon_redemption:
-      allow_multiple: false
       step: _sidebar
       weight: 10
+      allow_multiple: false
     email_registration_login:
-      allow_guest_checkout: true
-      allow_registration: false
       step: _disabled
       weight: 10
+      allow_guest_checkout: true
+      allow_registration: false
     email_registration_completion_registration:
       step: _disabled
       weight: 10

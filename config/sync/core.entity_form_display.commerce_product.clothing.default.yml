@@ -23,13 +23,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 3
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 8
@@ -37,31 +37,31 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_images:
+    type: image_image
     weight: 5
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_length:
+    type: number
     weight: 4
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_product_category:
+    type: term_reference_tree
     weight: 2
+    region: content
     settings:
+      start_minimized: false
+      leaves_only: false
       select_parents: true
       cascading_selection: 1
       max_depth: 0
-      start_minimized: false
-      leaves_only: false
     third_party_settings: {  }
-    type: term_reference_tree
-    region: content
   langcode:
     type: language_select
     weight: 6
@@ -77,10 +77,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   stores:
     type: commerce_entity_select

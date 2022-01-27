@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: size_print
 label: 'Taille et imprimé'
-orderItemType: default
-generateTitle: true
 traits: {  }
 locked: false
+orderItemType: default
+generateTitle: true

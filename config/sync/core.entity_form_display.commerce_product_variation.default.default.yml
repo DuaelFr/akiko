@@ -29,31 +29,31 @@ content:
   price:
     type: commerce_price_default
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   sku:
     type: commerce_bulk_sku
     weight: -4
+    region: content
     settings:
-      size: 60
-      placeholder: ''
       custom_label: ''
       uniqid_enabled: true
       more_entropy: false
       hide: false
       prefix: sku-
       suffix: ''
+      size: 60
+      placeholder: ''
       maximum: 500
     third_party_settings: {  }
-    region: content
   status:
     type: boolean_checkbox
     weight: 10
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   uid: true

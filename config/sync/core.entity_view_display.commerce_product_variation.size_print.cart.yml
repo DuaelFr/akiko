@@ -14,30 +14,30 @@ mode: cart
 content:
   attribute_print:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: cart
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   attribute_size:
     type: entity_reference_label
-    weight: 2
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
+    region: content
   product_id:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: cart
       link: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   langcode: true
   list_price: true

@@ -15,9 +15,9 @@ content:
   attribute_print:
     type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -42,22 +42,22 @@ content:
     weight: -4
     region: content
     settings:
-      size: 60
-      placeholder: ''
       custom_label: ''
       uniqid_enabled: true
       more_entropy: false
       hide: false
       prefix: sku-
       suffix: ''
+      size: 60
+      placeholder: ''
       maximum: 500
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 90
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden:
   created: true

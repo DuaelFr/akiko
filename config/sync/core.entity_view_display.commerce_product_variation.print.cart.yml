@@ -13,22 +13,22 @@ mode: cart
 content:
   attribute_print:
     type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: cart
+      link: false
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings:
-      view_mode: cart
-      link: false
-    third_party_settings: {  }
   product_id:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: cart
       link: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   langcode: true
   list_price: true

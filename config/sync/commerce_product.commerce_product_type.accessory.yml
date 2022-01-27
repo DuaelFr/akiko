@@ -4,9 +4,9 @@ status: true
 dependencies: {  }
 id: accessory
 label: Accessoire
+traits: {  }
+locked: false
 description: ''
 variationType: print
 multipleVariations: true
 injectVariationFields: true
-traits: {  }
-locked: false

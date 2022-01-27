@@ -30,113 +30,12 @@ base_table: commerce_order_item
 base_field: order_item_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: role
-        options:
-          role:
-            webmaster: webmaster
-            administrator: administrator
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Appliquer
-          reset_button: false
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: null
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            product_id: product_id
-            title: title
-            attribute_print: attribute_print
-            attribute_size: attribute_size
-            quantity: quantity
-            field_length: field_length
-            nothing: nothing
-          info:
-            product_id:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            attribute_print:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            attribute_size:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            quantity:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_length:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            nothing:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
-      row:
-        type: fields
+      title: 'Export des données de commande'
       fields:
         uid:
           id: uid
@@ -145,6 +44,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: uid
+          plugin_id: field
           label: N°Client
           exclude: false
           alter:
@@ -199,9 +101,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: uid
-          plugin_id: field
         uid_1:
           id: uid_1
           table: commerce_order
@@ -209,6 +108,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: uid
+          plugin_id: field
           label: Client
           exclude: false
           alter:
@@ -264,9 +166,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: uid
-          plugin_id: field
         order_id:
           id: order_id
           table: commerce_order
@@ -274,6 +173,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: order_id
+          plugin_id: field
           label: N°commande
           exclude: true
           alter:
@@ -330,9 +232,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: order_id
-          plugin_id: field
         order_number:
           id: order_number
           table: commerce_order
@@ -340,6 +239,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: order_number
+          plugin_id: field
           label: 'Numéro de commande'
           exclude: false
           alter:
@@ -395,9 +297,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: order_number
-          plugin_id: field
         product_id:
           id: product_id
           table: commerce_product_variation_field_data
@@ -405,6 +304,9 @@ display:
           relationship: commerce_product_variation
           group_type: group
           admin_label: ''
+          entity_type: commerce_product_variation
+          entity_field: product_id
+          plugin_id: field
           label: Produit
           exclude: false
           alter:
@@ -460,9 +362,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_product_variation
-          entity_field: product_id
-          plugin_id: field
         field_product_category:
           id: field_product_category
           table: commerce_product__field_product_category
@@ -470,6 +369,7 @@ display:
           relationship: product_id
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Catégorie
           exclude: false
           alter:
@@ -525,7 +425,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: commerce_order_item
@@ -533,6 +432,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: title
+          plugin_id: field
           label: Référence
           exclude: false
           alter:
@@ -587,9 +489,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: null
-          entity_field: title
-          plugin_id: field
         attribute_print:
           id: attribute_print
           table: commerce_product_variation__attribute_print
@@ -597,6 +496,7 @@ display:
           relationship: commerce_product_variation
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Imprimé
           exclude: false
           alter:
@@ -652,7 +552,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         attribute_size:
           id: attribute_size
           table: commerce_product_variation__attribute_size
@@ -660,6 +559,7 @@ display:
           relationship: commerce_product_variation
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Taille
           exclude: false
           alter:
@@ -715,7 +615,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         quantity:
           id: quantity
           table: commerce_order_item
@@ -723,6 +622,9 @@ display:
           relationship: none
           group_type: sum
           admin_label: ''
+          entity_type: commerce_order_item
+          entity_field: quantity
+          plugin_id: field
           label: 'Nombre de pièces'
           exclude: false
           alter:
@@ -768,9 +670,9 @@ display:
           type: number_decimal
           settings:
             thousand_separator: ''
-            prefix_suffix: true
             decimal_separator: .
             scale: 0
+            prefix_suffix: true
           group_column: null
           group_columns: null
           group_rows: true
@@ -788,9 +690,6 @@ display:
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
-          entity_type: commerce_order_item
-          entity_field: quantity
-          plugin_id: field
         field_length:
           id: field_length
           table: commerce_product__field_length
@@ -798,6 +697,7 @@ display:
           relationship: product_id
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Metrage
           exclude: false
           alter:
@@ -843,9 +743,9 @@ display:
           type: number_decimal
           settings:
             thousand_separator: ''
-            prefix_suffix: false
             decimal_separator: ','
             scale: 2
+            prefix_suffix: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -856,7 +756,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         price__number:
           id: price__number
           table: commerce_product_variation_field_data
@@ -864,6 +763,9 @@ display:
           relationship: commerce_product_variation
           group_type: group
           admin_label: ''
+          entity_type: commerce_product_variation
+          entity_field: price
+          plugin_id: field
           label: 'Prix HT pièce'
           exclude: false
           alter:
@@ -920,9 +822,32 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_product_variation
-          entity_field: price
-          plugin_id: field
+      pager:
+        type: none
+        options:
+          offset: null
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Appliquer
+          reset_button: false
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: role
+        options:
+          role:
+            webmaster: webmaster
+            administrator: administrator
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
       filters:
         state:
           id: state
@@ -931,6 +856,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: state
+          plugin_id: state_machine_state
           operator: in
           value:
             completed: completed
@@ -963,14 +891,88 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: commerce_order
-          entity_field: state
-          plugin_id: state_machine_state
-      sorts: {  }
-      title: 'Export des données de commande'
-      header: {  }
-      footer: {  }
-      empty: {  }
+      filter_groups:
+        operator: AND
+        groups: {  }
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            product_id: product_id
+            title: title
+            attribute_print: attribute_print
+            attribute_size: attribute_size
+            quantity: quantity
+            field_length: field_length
+            nothing: nothing
+          default: '-1'
+          info:
+            product_id:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            attribute_print:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            attribute_size:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            quantity:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_length:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
       relationships:
         commerce_product_variation:
           id: commerce_product_variation
@@ -979,9 +981,9 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Product variation'
-          required: false
           entity_type: commerce_order_item
           plugin_id: standard
+          required: false
         product_id:
           id: product_id
           table: commerce_product_variation_field_data
@@ -989,10 +991,10 @@ display:
           relationship: commerce_product_variation
           group_type: group
           admin_label: Produit
-          required: false
           entity_type: commerce_product_variation
           entity_field: product_id
           plugin_id: standard
+          required: false
         order_id:
           id: order_id
           table: commerce_order_item
@@ -1000,16 +1002,14 @@ display:
           relationship: none
           group_type: group
           admin_label: Commande
-          required: false
           entity_type: commerce_order_item
           entity_field: order_id
           plugin_id: standard
-      arguments: {  }
+          required: false
+      group_by: false
+      header: {  }
+      footer: {  }
       display_extenders: {  }
-      filter_groups:
-        operator: AND
-        groups: {  }
-      group_by: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -1022,13 +1022,11 @@ display:
         - 'config:field.storage.commerce_product_variation.attribute_print'
         - 'config:field.storage.commerce_product_variation.attribute_size'
   data_export_1:
-    display_plugin: data_export
     id: data_export_1
     display_title: 'Exportation de données'
+    display_plugin: data_export
     position: 2
     display_options:
-      display_extenders: {  }
-      path: export-donnees-commandes
       style:
         type: excel_export
         options:
@@ -1046,17 +1044,19 @@ display:
               category: ''
               manager: ''
               company: ''
-      filename: 'export-donnees-commande_[date:html_date].xlsx'
-      automatic_download: false
-      store_in_public_file_directory: true
-      redirect_to_display: none
-      custom_redirect_path: false
-      include_query_params: false
+      display_extenders: {  }
+      path: export-donnees-commandes
       displays:
         default: '0'
         page_1: '0'
+      filename: 'export-donnees-commande_[date:html_date].xlsx'
+      automatic_download: false
       export_method: batch
       export_batch_size: 1000
+      store_in_public_file_directory: true
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1070,12 +1070,11 @@ display:
         - 'config:field.storage.commerce_product_variation.attribute_print'
         - 'config:field.storage.commerce_product_variation.attribute_size'
   data_export_2:
-    display_plugin: data_export
     id: data_export_2
     display_title: 'Exportation données csv'
+    display_plugin: data_export
     position: 4
     display_options:
-      display_extenders: {  }
       style:
         type: data_export
         options:
@@ -1103,18 +1102,19 @@ display:
               manager: ''
               company: ''
       display_description: ''
+      display_extenders: {  }
       path: export-commandes-csv
-      filename: 'donnes-commandes_[date:custom:Y-m-d_H-i-s].csv'
-      automatic_download: false
-      store_in_public_file_directory: true
-      redirect_to_display: none
-      custom_redirect_path: false
-      include_query_params: false
-      export_method: batch
-      export_batch_size: 1000
       displays:
         page_1: page_1
         default: '0'
+      filename: 'donnes-commandes_[date:custom:Y-m-d_H-i-s].csv'
+      automatic_download: false
+      export_method: batch
+      export_batch_size: 1000
+      store_in_public_file_directory: true
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1128,9 +1128,9 @@ display:
         - 'config:field.storage.commerce_product_variation.attribute_print'
         - 'config:field.storage.commerce_product_variation.attribute_size'
   excel_export_1:
-    display_plugin: excel_export
     id: excel_export_1
     display_title: 'Excel export'
+    display_plugin: excel_export
     position: 2
     display_options:
       display_extenders: {  }
@@ -1170,31 +1170,43 @@ display:
         - 'config:field.storage.commerce_product_variation.attribute_print'
         - 'config:field.storage.commerce_product_variation.attribute_size'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Tous les items'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: admin/commerce/order-data_export
-      menu:
-        type: normal
-        title: 'Export données'
-        description: 'Données de métrage et exportation des données.'
-        expanded: false
-        parent: commerce.admin_commerce
-        weight: 1000
-        context: '0'
-        menu_name: admin
-      header: {  }
-      defaults:
-        header: false
-        filters: false
-        filter_groups: false
-        exposed_form: false
-        title: false
-        group_by: false
-        sorts: false
+      title: 'Export des données de commande'
+      pager:
+        type: some
+        options:
+          offset: null
+          items_per_page: 25
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Appliquer
+          reset_button: true
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      sorts:
+        uid:
+          id: uid
+          table: commerce_order
+          field: uid
+          relationship: order_id
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_order
+          entity_field: uid
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: uid
+          exposed: false
       filters:
         state:
           id: state
@@ -1203,6 +1215,9 @@ display:
           relationship: order_id
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: state
+          plugin_id: state_machine_state
           operator: in
           value:
             completed: completed
@@ -1235,41 +1250,33 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: commerce_order
-          entity_field: state
-          plugin_id: state_machine_state
       filter_groups:
         operator: AND
         groups:
           1: AND
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Appliquer
-          reset_button: true
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      title: 'Export des données de commande'
+      defaults:
+        title: false
+        pager: false
+        exposed_form: false
+        group_by: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
       group_by: false
       display_description: ''
-      sorts:
-        uid:
-          id: uid
-          table: commerce_order
-          field: uid
-          relationship: order_id
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: commerce_order
-          entity_field: uid
-          plugin_id: standard
+      header: {  }
+      display_extenders: {  }
+      path: admin/commerce/order-data_export
+      menu:
+        type: normal
+        title: 'Export données'
+        description: 'Données de métrage et exportation des données.'
+        weight: 1000
+        expanded: false
+        menu_name: admin
+        parent: commerce.admin_commerce
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

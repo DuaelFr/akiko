@@ -28,10 +28,10 @@ content:
   customer_profiles:
     type: profile_form
     weight: 90
+    region: content
     settings:
       form_mode: default
     third_party_settings: {  }
-    region: content
   language:
     weight: 0
     region: content
@@ -46,12 +46,12 @@ content:
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   commerce_remote_id: true
   langcode: true
