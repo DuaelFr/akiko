@@ -20,6 +20,8 @@ content:
     settings:
       image_link: ''
       image_style: cart_print
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
