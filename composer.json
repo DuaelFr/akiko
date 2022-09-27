@@ -137,7 +137,10 @@
         },
         "patches": {
             "drupal/views_data_export": {
-                "Support views data export using drush": "https://www.drupal.org/files/issues/2021-06-30/2887450-51.patch"     
+                "Support views data export using drush": "https://www.drupal.org/files/issues/2021-06-30/2887450-51.patch"
+            },
+            "drupal/commerce_cart_api": {
+                "Implement CacheableSupportsMethodInterface::hasCacheableSupportsMethod()": "https://www.drupal.org/files/issues/2022-06-24/commerce_cart_api-3292397-2.patch"
             }
         }
     }

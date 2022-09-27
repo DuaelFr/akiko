@@ -1,3 +1,10 @@
+Akiko v1.08 / 27 sept 2022
+-------------------------
+  * Correction du problème de panier flyout vide après mise à jour en Drupal 9.4 : patch appliqué sur le module commerce_cart_api (https://www.drupal.org/project/commerce_cart_api/issues/3292397).
+  * Correction du dysfonctionnement de la recherche à facette après mise à jour de Drupal : Modification du paramétrage de la Facet Source : l'URL processor est repositionné sur 'paramètre d'URL' au lieu de 'Pretty paths'.
+  * Ajout de deux scripts oubliés du répertoire bin, arrivés lors de la dernière mise à jour du vendor laminas (ex Zend Framework).
+  * Merge tag 'v1.07' into develop
+
 Akiko v1.07 / 8 sept 2022
 -------------------------
   * Mise à jour de sécurité septembre 2022 : noyau (9.33 -> 9.4.5) et require_login.
