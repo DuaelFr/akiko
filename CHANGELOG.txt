@@ -1,3 +1,9 @@
+Akiko v1.09 / 26 avr 2023
+--------------------------
+  * Mise à jour du noyau Drupal : 9.5.0 -> 9.5.8
+  * Mise à jour de sécurité de décembre 2022 (finie en janvier) : noyau (9.4.5 -> 9.5.0), search_api (1.19.0 -> 1.28.0).
+  * Modif Swift Mailer : le relais smtp est maintenant Sendinblue.
+
 Akiko v1.08 / 27 sept 2022
 -------------------------
   * Correction du problème de panier flyout vide après mise à jour en Drupal 9.4 : patch appliqué sur le module commerce_cart_api (https://www.drupal.org/project/commerce_cart_api/issues/3292397).
