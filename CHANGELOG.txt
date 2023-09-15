@@ -1,3 +1,8 @@
+Akiko v1.10 / 15 sept 2023
+--------------------------
+  * Mise à jour du noyau : 9.5.8 => 9.5.10
+  * Installation du module upgrade_status en vue du passage à Drupal 10.
+  * Export des paramétrages search_api.
 Akiko v1.09 / 26 avr 2023
 --------------------------
   * Mise à jour du noyau Drupal : 9.5.0 -> 9.5.8
