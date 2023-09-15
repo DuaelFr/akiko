@@ -1,3 +1,4 @@
+langcode: fr
 login_path: /user/login
 login_message: 'Vous devez vous connecter pour accéder à cette page.'
 login_destination: ''
