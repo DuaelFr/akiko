@@ -1,6 +1,6 @@
 uuid: d10d0b57-abf8-4e1b-b594-3dc47a898056
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: l7DU4IlrCj2DTMidvM-KK-P8heuOP8XCsxry_UoLm5E
 id: belgrade_account_menu
 theme: belgrade
-region: top_navigation
+region: navigation
 weight: -6
 provider: null
 plugin: 'system_menu_block:account'

@@ -1,6 +1,6 @@
 uuid: e8dafc83-ddc0-4c95-99b7-6dc0e53ae09f
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.catalog

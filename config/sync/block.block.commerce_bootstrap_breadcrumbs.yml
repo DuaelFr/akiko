@@ -1,22 +1,22 @@
-uuid: f4532a5a-3c61-4341-986e-edf432bc2af0
+uuid: 4dff7c99-33e3-4c20-a1fe-c864d9918614
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+  default_config_hash: N1cq7jc4R0m_29rs2Jnz0WjcslEeZ0AsN9Od1-_vW9s
 id: commerce_bootstrap_breadcrumbs
 theme: commerce_bootstrap
-region: navigation
-weight: 0
+region: highlighted
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: 'Fils d''ariane'
+  label: Breadcrumbs
   label_display: '0'
   provider: system
 visibility: {  }

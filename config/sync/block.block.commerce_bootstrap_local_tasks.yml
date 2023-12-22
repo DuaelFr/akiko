@@ -1,20 +1,20 @@
-uuid: 1e8c49e8-e44b-4226-96ad-c56263d673af
+uuid: 22998aca-243e-4b45-98d2-fde35ae1f1a1
 langcode: fr
 status: true
 dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+  default_config_hash: rmiFUWInr28Z1v9rk-oycl_G9hlS7PzBvKbih2qIEuM
 id: commerce_bootstrap_local_tasks
 theme: commerce_bootstrap
 region: content
-weight: -40
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Onglets
+  label: Tabs
   label_display: '0'
   provider: core
   primary: true

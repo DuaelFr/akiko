@@ -1,4 +1,4 @@
-uuid: 9802ce5b-d225-461f-bfca-12a8f0ea6c49
+uuid: 3dccf835-5359-4516-9272-fd780a549fad
 langcode: fr
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: uxiZlSldLtoOp05pfXeKJxxtvB0ckxx3mAAabJdAJnU
 id: commerce_bootstrap_messages
 theme: commerce_bootstrap
 region: highlighted
-weight: 0
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Messages de statut'
+  label: 'Status messages'
   label_display: '0'
   provider: system
 visibility: {  }

@@ -12,7 +12,6 @@ dependencies:
     - serialization
     - state_machine
     - user
-    - views_autocomplete_filters
     - xls_serialization
 _core:
   default_config_hash: HFX6ZqjZ-Ph27nJoRvTzBtYCqiDzUaPdz-yRGWiQJtE

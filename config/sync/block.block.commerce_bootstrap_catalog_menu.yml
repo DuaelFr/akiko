@@ -1,4 +1,4 @@
-uuid: b5002a55-b992-4940-b4f2-611cf35003b8
+uuid: f074bbb2-5fc0-4f98-8b65-8cc375612033
 langcode: fr
 status: false
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   module:
     - system
   theme:
-    - aft
-id: aft_catalog_menu_navigation
-theme: aft
-region: navigation
-weight: -7
+    - commerce_bootstrap
+id: commerce_bootstrap_catalog_menu
+theme: commerce_bootstrap
+region: header
+weight: 0
 provider: null
 plugin: 'system_menu_block:catalog'
 settings:
   id: 'system_menu_block:catalog'
-  label: 'Catalogue menu navigation'
+  label: 'Menu Catalogue'
   label_display: '0'
   provider: system
   level: 1

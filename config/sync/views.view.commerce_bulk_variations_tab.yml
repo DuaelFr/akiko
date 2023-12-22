@@ -6,7 +6,6 @@ dependencies:
     - commerce_price
     - commerce_product
     - user
-    - views_autocomplete_filters
 _core:
   default_config_hash: q5JTAyS-l1BAVYd-pDYbEQiStgOLjTiNgR95UG2o43w
 id: commerce_bulk_variations_tab

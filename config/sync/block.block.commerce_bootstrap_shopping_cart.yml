@@ -1,17 +1,17 @@
-uuid: 10a220dc-ef54-4edb-9fe5-14819550e00a
+uuid: 0b00b0de-6335-4f26-83ee-5544b769ffa5
 langcode: fr
 status: true
 dependencies:
   module:
-    - commerce_cart
+    - commerce_cart_flyout
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
+  default_config_hash: orSxR8gn7umdR1c6gwf974l_423iO55PL0tkHpOWRhw
 id: commerce_bootstrap_shopping_cart
 theme: commerce_bootstrap
-region: header
-weight: null
+region: navigation
+weight: -7
 provider: null
 plugin: commerce_cart
 settings:
@@ -20,5 +20,6 @@ settings:
   label_display: '0'
   provider: commerce_cart
   dropdown: true
+  use_quantity_count: false
   item_text: items
 visibility: {  }

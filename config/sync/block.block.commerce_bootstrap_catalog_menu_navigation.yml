@@ -1,4 +1,4 @@
-uuid: b5002a55-b992-4940-b4f2-611cf35003b8
+uuid: c7b00fad-c882-4fc9-9672-7bbfb895d0b9
 langcode: fr
 status: false
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - aft
-id: aft_catalog_menu_navigation
-theme: aft
+    - commerce_bootstrap
+id: commerce_bootstrap_catalog_menu_navigation
+theme: commerce_bootstrap
 region: navigation
 weight: -7
 provider: null
