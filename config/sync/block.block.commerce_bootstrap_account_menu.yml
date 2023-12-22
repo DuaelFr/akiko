@@ -1,4 +1,4 @@
-uuid: a3d3f4b5-0710-4ad4-8d1a-29da52a60420
+uuid: b5e6323e-ff22-4856-990c-4fa4e493a278
 langcode: fr
 status: true
 dependencies:
@@ -9,16 +9,16 @@ dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
+  default_config_hash: l7DU4IlrCj2DTMidvM-KK-P8heuOP8XCsxry_UoLm5E
 id: commerce_bootstrap_account_menu
 theme: commerce_bootstrap
 region: navigation
-weight: 0
+weight: -8
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: 'Menu du compte de l''utilisateur'
+  label: 'User account menu'
   label_display: '0'
   provider: system
   level: 1

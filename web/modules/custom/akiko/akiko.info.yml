@@ -2,5 +2,4 @@ name: Akiko
 type: module
 description: "Akiko Toolbox"
 package: Akiko
-core_version_requirement: ^8.8 || ^9
-
+core_version_requirement: ^8.8 || ^9 || ^10

@@ -8,3 +8,33 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__1':
+    enabled: true
+    menu_name: catalog
+    parent: ''
+    expanded: false
+    weight: 12
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__2':
+    enabled: true
+    menu_name: catalog
+    parent: ''
+    weight: 13
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__3':
+    enabled: true
+    menu_name: catalog
+    parent: ''
+    weight: 14
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__4':
+    enabled: true
+    menu_name: catalog
+    parent: ''
+    weight: 15
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__5':
+    enabled: true
+    menu_name: catalog
+    parent: ''
+    weight: 16
+    expanded: false

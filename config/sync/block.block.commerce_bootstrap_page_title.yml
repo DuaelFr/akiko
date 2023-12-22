@@ -1,20 +1,27 @@
-uuid: cf16f117-5042-4f37-8421-07ca489c4a30
+uuid: fe3e5ede-57e6-4a38-8b42-7416bead34b4
 langcode: fr
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+  default_config_hash: mmcopYofUmb3PLb10rD6utbPoo6_zpxaX4yf3i4xmH8
 id: commerce_bootstrap_page_title
 theme: commerce_bootstrap
 region: content
-weight: -50
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Titre de page'
+  label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/produit/*\r\n/produits*"

@@ -1,4 +1,4 @@
-uuid: eefe23a2-edb1-4f7b-bf69-e0823691f85f
+uuid: be89146f-cb83-425f-a337-29ed7eda435c
 langcode: fr
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
+  default_config_hash: jSLJ3sJUecEmCmbbB-ISvExMtHpzXsFIguGKTTI6lPA
 id: commerce_bootstrap_checkout_progress
 theme: commerce_bootstrap
 region: content
@@ -17,7 +17,7 @@ provider: null
 plugin: commerce_checkout_progress
 settings:
   id: commerce_checkout_progress
-  label: 'Progression du parcours d''achat'
+  label: 'Checkout progress'
   label_display: '0'
   provider: commerce_checkout
 visibility:

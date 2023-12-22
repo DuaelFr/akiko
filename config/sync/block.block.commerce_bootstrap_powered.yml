@@ -1,4 +1,4 @@
-uuid: f3aebb62-bb8e-4053-82c4-b107eefbbf3d
+uuid: 4f19b098-09d2-4f3e-a913-4833c47f9fb5
 langcode: fr
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+  default_config_hash: z0llL779cPFRJ5myqA63dPOl35O7K1lx6wP5omHTi8U
 id: commerce_bootstrap_powered
 theme: commerce_bootstrap
-region: navigation
-weight: 10
+region: footer
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
-  label: 'Propulsé par Drupal'
+  label: 'Powered by Drupal'
   label_display: '0'
   provider: system
 visibility: {  }

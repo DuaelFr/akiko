@@ -1,4 +1,4 @@
-uuid: 3bf15176-2990-401d-9d40-2e19ae3cec45
+uuid: 05f6cd5a-8409-4b82-9dad-64722a015f58
 langcode: fr
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+  default_config_hash: gKtOcSQTQki2pujw1HB5crJu7WlQmuPbl9cMqPDeWtA
 id: commerce_bootstrap_help
 theme: commerce_bootstrap
 region: content
-weight: -30
+weight: -8
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Aide
+  label: Help
   label_display: '0'
   provider: help
 visibility: {  }

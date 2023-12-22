@@ -1,24 +1,24 @@
-uuid: b54e78a4-288d-4947-a449-63440139e97d
+uuid: 540fd779-68b5-445d-9533-67b13c92358a
 langcode: fr
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.social
   module:
     - system
   theme:
     - commerce_bootstrap
 _core:
-  default_config_hash: nI9USQjCYio-S2yKUK3OfHTG92pwjXbHdzhKKeAWaAY
-id: commerce_bootstrap_footer
+  default_config_hash: CB3dmNJAl-l-FXg6eF2UXlZ6w5eYVZGiw3MGVvJ5V-E
+id: commerce_bootstrap_social
 theme: commerce_bootstrap
 region: footer
-weight: -5
+weight: -4
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:social'
 settings:
-  id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  id: 'system_menu_block:social'
+  label: Social
   label_display: '0'
   provider: system
   level: 1

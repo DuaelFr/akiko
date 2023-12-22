@@ -1,3 +1,9 @@
+Akiko v1.11 / 22 dec 2023
+--------------------------
+  * Application de patch sur commerce_cart_flyout (cf https://www.drupal.org/project/commerce_cart_flyout/issues/3364476).
+  * Mise à jour de sécurité de décembre 2023. Préparation passage à Drupal 10.
+  * Merge tag 'v1.10' into develop
+
 Akiko v1.10 / 15 sept 2023
 --------------------------
   * Mise à jour du noyau : 9.5.8 => 9.5.10

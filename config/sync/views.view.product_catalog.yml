@@ -6,7 +6,6 @@ dependencies:
     - search_api.index.products
   module:
     - search_api
-    - views_autocomplete_filters
 id: product_catalog
 label: 'Catalogue de produits'
 module: views
