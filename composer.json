@@ -144,6 +144,10 @@
                 "type:drupal-drush"
             ]
         },
-        "patches": {}
+        "patches": {
+            "drupal/commerce_cart_flyout": {
+                "after upgrading to Commerce Core 8.x-2.36 this module doesn't work": "https://git.drupalcode.org/project/commerce_cart_flyout/-/merge_requests/12.patch"
+            }
+        }
     }
 }
