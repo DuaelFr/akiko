@@ -263,6 +263,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -307,7 +308,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Aucune boutique n''est disponible.'
+          content: "Aucune boutique n'est disponible."
           tokenize: false
       sorts: {  }
       arguments: {  }

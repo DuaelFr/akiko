@@ -6,5 +6,6 @@ dependencies:
     - commerce_product
 id: commerce_product_attribute_value.cart
 label: Panier
+description: ''
 targetEntityType: commerce_product_attribute_value
 cache: true

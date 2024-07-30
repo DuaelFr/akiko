@@ -12,6 +12,7 @@ dependencies:
     - commerce_promotion
     - commerce_store
     - contact
+    - file
     - node
     - profile
     - system
@@ -49,9 +50,8 @@ permissions:
   - 'delete any accessory commerce_product'
   - 'delete any clothing commerce_product'
   - 'delete any page content'
-  - 'delete commerce_promotion'
   - 'delete default commerce_order'
-  - 'duplicate commerce_promotion'
+  - 'delete own files'
   - 'edit any page content'
   - 'manage default commerce_order_item'
   - 'manage print commerce_product_variation'
@@ -61,7 +61,6 @@ permissions:
   - 'update any commerce_promotion'
   - 'update any online commerce_store'
   - 'update commerce_product_attribute'
-  - 'update commerce_promotion'
   - 'update default commerce_order'
   - 'view accessory commerce_product'
   - 'view clothing commerce_product'

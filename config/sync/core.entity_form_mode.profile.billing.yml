@@ -11,5 +11,6 @@ _core:
   default_config_hash: yeGwCxbA5dBAS_3eBkfaVrbxkASEM357dkjPZShKiR4
 id: profile.billing
 label: Facturation
+description: ''
 targetEntityType: profile
 cache: true

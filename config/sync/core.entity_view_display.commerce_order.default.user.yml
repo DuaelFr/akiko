@@ -32,9 +32,26 @@ content:
       date_format: short
       custom_date_format: ''
       timezone: ''
+      tooltip:
+        date_format: ''
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
     third_party_settings: {  }
     weight: 2
     region: content
+  coupons:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: true
+    region: content
+    weight: 7
+    third_party_settings: {  }
   mail:
     type: basic_string
     label: inline
@@ -64,6 +81,15 @@ content:
       date_format: short
       custom_date_format: ''
       timezone: ''
+      tooltip:
+        date_format: ''
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
     third_party_settings: {  }
     weight: 3
     region: content
@@ -85,6 +111,7 @@ hidden:
   balance: true
   changed: true
   ip_address: true
+  search_api_excerpt: true
   store_id: true
   total_paid: true
   uid: true

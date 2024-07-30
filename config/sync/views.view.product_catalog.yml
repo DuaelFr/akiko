@@ -75,7 +75,19 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: timestamp
-          settings: {  }
+          settings:
+            date_format: medium
+            custom_date_format: ''
+            timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -154,7 +166,7 @@ display:
           plugin_id: search_api
           order: ASC
           expose:
-            label: 'Date d''ajout'
+            label: "Date d'ajout"
             field_identifier: created
           exposed: true
       arguments: {  }
@@ -246,7 +258,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_none
       defaults:
         cache: false
       display_extenders: {  }

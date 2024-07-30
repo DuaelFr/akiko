@@ -8,6 +8,7 @@ dependencies:
     - commerce_product
     - commerce_promotion
     - commerce_store
+    - file
 id: customer
 label: Client
 weight: -8
@@ -15,6 +16,7 @@ is_admin: null
 permissions:
   - 'access checkout'
   - 'create default commerce_order'
+  - 'delete own files'
   - 'update default commerce_order'
   - 'view accessory commerce_product'
   - 'view clothing commerce_product'

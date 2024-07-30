@@ -1,0 +1,18 @@
+uuid: d3e4178b-63fb-4b08-bc1e-c2bcf094bcbc
+langcode: fr
+status: true
+dependencies: {  }
+id: smtp
+label: SMTP
+plugin: smtp
+configuration:
+  user: christophe.espiau@gmail.com
+  pass: Cespio!2607agc
+  host: smtp.gmail.com
+  port: 465
+  query:
+    verify_peer: true
+    local_domain: ''
+    restart_threshold: null
+    restart_threshold_sleep: null
+    ping_threshold: null

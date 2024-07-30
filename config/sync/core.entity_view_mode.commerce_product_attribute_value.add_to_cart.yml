@@ -7,6 +7,7 @@ dependencies:
 _core:
   default_config_hash: ry5RvX-mOnp2GQWzMqSYjPz-jKfP1nSo4Xo4kJCodlE
 id: commerce_product_attribute_value.add_to_cart
-label: 'Formulaire d''ajout au panier'
+label: "Formulaire d'ajout au panier"
+description: ''
 targetEntityType: commerce_product_attribute_value
 cache: true
