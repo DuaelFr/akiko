@@ -20,17 +20,18 @@
  * @see template_preprocess_input()
  */
 #}
-{% spaceless %}
-  {%
-    set classes = [
-      'form-control',
-      'form-number',
-    ]
-  %}
-  {% block input %}
-      {{ attach_library('belgrade/custom-form-elements') }}
-      <button class="number-btn increment" type="button">+</button>
-      <input{{ attributes.addClass(classes) }} />
-      <button class="number-btn decrement" type="button">-</button>
-  {% endblock %}
-{% endspaceless %}
+{% block input %}
+  {% apply spaceless %}
+    {%
+      set classes = [
+        'form-control',
+        'form-number',
+      ]
+    %}
+    
+        {{ attach_library('belgrade/custom-form-elements') }}
+        <button class="number-btn increment" type="button">+</button>
+        <input{{ attributes.addClass(classes) }} />
+        <button class="number-btn decrement" type="button">-</button>
+  {% endapply %}
+{% endblock %}

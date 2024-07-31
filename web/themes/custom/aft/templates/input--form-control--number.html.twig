@@ -20,22 +20,23 @@
  * @see template_preprocess_input()
  */
 #}
-{% spaceless %}
-  {%
-    set classes = [
-      'form-control',
-      'form-number',
-    ]
-  %}
+{% block input %}
+  {% apply spaceless %}
+    {%
+      set classes = [
+        'form-control',
+        'form-number',
+      ]
+    %}
 
-  {% block input %}
-{#    {{ attach_library('belgrade/custom-form-elements') }}#}
-    {{ attach_library('aft/aft-custom-form-elements') }}
-    <div class="aft-quantity-adjustment">
-      <button class="number-btn decrement" type="button">-</button>
-        <input{{ attributes.addClass(classes) }} />
-      <button class="number-btn increment" type="button">+</button>
-    </div>
-    <div class="aft-commercial-info">Tous nos produits sont vendus par 2</div>
-  {% endblock %}
-{% endspaceless %}
+
+  {#    {{ attach_library('belgrade/custom-form-elements') }}#}
+      {{ attach_library('aft/aft-custom-form-elements') }}
+      <div class="aft-quantity-adjustment">
+        <button class="number-btn decrement" type="button">-</button>
+          <input{{ attributes.addClass(classes) }} />
+        <button class="number-btn increment" type="button">+</button>
+      </div>
+      <div class="aft-commercial-info">Tous nos produits sont vendus par 2</div>
+  {% endapply %}
+{% endblock %}
