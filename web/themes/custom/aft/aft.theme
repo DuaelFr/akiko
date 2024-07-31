@@ -41,7 +41,7 @@ function aft_preprocess_input(&$variables) {
   // dans une page produit ou dans la page Panier.
   //
   // Dans les deux cas 1 et 3, les identifiants d'input contiennent tous 'edit-quantity'.
-  if (strpos($variables["element"]["#id"], 'edit-quantity') !== false) {
+  if (isset($variables["element"]["#id"]) && strpos($variables["element"]["#id"], 'edit-quantity') !== false) {
     $variables['attributes']->setAttribute('step', 2);
     $variables['attributes']->setAttribute('min', 2);
 
