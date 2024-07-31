@@ -144,6 +144,10 @@
                 "type:drupal-drush"
             ]
         },
-        "patches": {}
+        "patches": {
+            "drupal/core": {
+                "An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2024-03-06/mr-4707-vs-10.2.x.patch"
+            }
+        }
     }
 }
