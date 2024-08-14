@@ -54,6 +54,7 @@
         "drupal/facets": "^2",
         "drupal/facets_pretty_paths": "^2.0",
         "drupal/image_delta_formatter": "^1.1",
+        "drupal/potx": "^1.1",
         "drupal/readmehelp": "1.0.0-beta6",
         "drupal/require_login": "^3.0",
         "drupal/search_api": "^1.19",
