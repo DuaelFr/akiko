@@ -24,7 +24,7 @@ tips:
   search-api-index-form-name:
     id: search-api-index-form-name
     plugin: text
-    label: 'Nom de l''index'
+    label: "Nom de l'index"
     weight: 2
     selector: '#edit-name'
     body: 'Enter a name to identify this index. For example, "Content index". This will only be displayed in the admin user interface.'
@@ -41,7 +41,7 @@ tips:
     label: Tracker
     weight: 4
     selector: '#edit-tracker'
-    body: 'An index''s tracker is the system that keeps track of which items there are available for the index, and which of them still need to be indexed. Changing the tracker of an existing index will lead to reindexing of all items.'
+    body: "An index's tracker is the system that keeps track of which items there are available for the index, and which of them still need to be indexed. Changing the tracker of an existing index will lead to reindexing of all items."
   search-api-index-form-server:
     id: search-api-index-form-server
     plugin: text
@@ -52,7 +52,7 @@ tips:
   search-api-index-form-description:
     id: search-api-index-form-description
     plugin: text
-    label: 'Description de l''index'
+    label: "Description de l'index"
     weight: 6
     selector: '#edit-description'
     body: 'Optionally, enter a description to explain the function of the index in more detail. This will only be displayed in the admin user interface.'

@@ -1,6 +1,5 @@
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
-langcode: fr
 definitions:
   contact__site_page:
     menu_name: footer
@@ -9,32 +8,32 @@ definitions:
     expanded: false
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__1':
-    enabled: true
     menu_name: catalog
     parent: ''
-    expanded: false
     weight: 12
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__2':
+    expanded: false
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__2':
     menu_name: catalog
     parent: ''
     weight: 13
     expanded: false
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__3':
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__3':
     menu_name: catalog
     parent: ''
     weight: 14
     expanded: false
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__4':
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__4':
     menu_name: catalog
     parent: ''
     weight: 15
     expanded: false
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__5':
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalog__5':
     menu_name: catalog
     parent: ''
     weight: 16
     expanded: false
+    enabled: true

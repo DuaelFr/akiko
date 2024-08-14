@@ -22,7 +22,7 @@ tips:
   search-api-index-index-status:
     id: search-api-index-index-status
     plugin: text
-    label: 'Statut de l''index'
+    label: "Statut de l'index"
     weight: 2
     selector: .search-api-index-status
     body: 'This gives a summary about how many items are known for this index, and how many have been indexed in their latest version. Items that are not indexed yet cannot be found by searches.'
@@ -57,7 +57,7 @@ tips:
   search-api-index-server-index-status:
     id: search-api-index-server-index-status
     plugin: text
-    label: 'État du serveur d''indexation'
+    label: "État du serveur d'indexation"
     weight: 7
     selector: .search-api-index-summary--server-index-status
     body: 'For enabled indexes, the number of items that can actually be retrieved from the server is listed here. For reasons why this number might differ from the number under "Index status", <a href="https://www.drupal.org/docs/8/modules/search-api/getting-started/frequently-asked-questions#server-index-status">see the module''s documentation</a>.'
@@ -71,7 +71,7 @@ tips:
   search-api-index-index-now:
     id: search-api-index-remove
     plugin: text
-    label: 'Démarrer l''indexation immédiatement'
+    label: "Démarrer l'indexation immédiatement"
     weight: 9
     selector: '#edit-index'
     body: 'The "Start indexing now" form allows indexing items manually right away, with a batch process. Otherwise, items are only indexed during cron runs. The form might be disabled if indexing is currently not possible for some reason, or not necessary.'
@@ -85,7 +85,7 @@ tips:
   search-api-index-reindex:
     id: search-api-index-reindex
     plugin: text
-    label: 'Mettre tous les éléments en file d''attente pour réindexation'
+    label: "Mettre tous les éléments en file d'attente pour réindexation"
     weight: 11
     selector: '#edit-reindex'
     body: 'This will queue all items on this index for reindexing. Previously indexed data will remain on the search server, so searches on this index will continue to yield results.'
