@@ -77,5 +77,3 @@ ehthumbs_vista.db
 
 # Fichiers d'export de données de commandes générés via drush : drush views-data-export (vde)
 /views_data_exports/
- 
-/bin
