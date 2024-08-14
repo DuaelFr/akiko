@@ -1,3 +1,20 @@
+Akiko v2.0 / 14 aou 2023
+------------------------
+  * Ajout du module contrib potx, sans l'activer, pour résoudre un pb de déploiement.
+  * Rajout du dossier /bin supprimé par erreur.
+  * Correction du bug 'Cannot assign null to property Drupal\views\Plugin\views\query\QueryPluginBase:: of type int...' visible dans la page d'export des données /admin/commerce/order-data_export.
+  * Correction du bug 'Deprecated: strpos(): Passing null to parameter #1 ($haystack)...' visible sur la page d'un produit et sur la page Panier.
+  * Correction de 3 templates pour inclure tout le code twig, dont les {% apply spaceless %} entre {% block ... %} et {% endblock %}.
+  * Mise à niveau vers D10 : noyau 9.5.11 vers 10.3.1, dépendances et export config.
+  * Mise à niveau vers D10 : suppression des modules color, quickedit, rdf et ckeditor (v4).
+  * Mise à niveau vers D10 : Commit des fichiers scaffoldés.
+  * Ajout du dossier bin au gitignore.
+  * Mise à niveau vers D10 : etape 3 - mise à jour de taxonomy_menu.
+  * Mise à niveau vers D10 : Fork des thèmes belgrade et commerce_bootstrap.
+  * Mise à niveau vers D10 : étape 2.
+  * Mise à niveau vers D10 : étape 1.
+  * Suppression de scripts inutiles dans le répertoire bin.
+
 Akiko v1.11 / 22 dec 2023
 --------------------------
   * Application de patch sur commerce_cart_flyout (cf https://www.drupal.org/project/commerce_cart_flyout/issues/3364476).
