@@ -1,4 +1,8 @@
-Akiko v2.0 / 14 aou 2023
+Akiko v2.0 / 14 aou 2024
+------------------------
+  * Mise à jour du noyau Drupal (10.3.1 -> 10.3.5) et de 27 modules contrib
+
+Akiko v2.0 / 14 aou 2024
 ------------------------
   * Ajout du module contrib potx, sans l'activer, pour résoudre un pb de déploiement.
   * Rajout du dossier /bin supprimé par erreur.
