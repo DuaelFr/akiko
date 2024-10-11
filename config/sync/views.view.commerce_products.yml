@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: tu0PL5GIB4nIjUfFst2N0WsTO6Ju1WtX7lFr-ya9vAs
 id: commerce_products
-label: Products
+label: Produits
 module: views
 description: ''
 tag: Commerce
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Products
+      title: Produits
       fields:
         commerce_product_bulk_form:
           id: commerce_product_bulk_form

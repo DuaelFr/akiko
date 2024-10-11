@@ -32,7 +32,7 @@ tips:
     label: 'Région du Bloc'
     weight: 3
     selector: .block-region-select
-    body: "Attribuer ou modifier la région d'un bloc en cliquant ici. Une liste déroulante avec toutes les régions apparaîtra. Vous pouvez placer un bloc dans plusieurs régions."
+    body: "Assigner ou changer la région d'un bloc en cliquant ici. Une liste déroulante avec toutes les régions apparaîtra. Vous pouvez placer un bloc dans de multiples régions."
   configure-block:
     id: configure-block
     plugin: text

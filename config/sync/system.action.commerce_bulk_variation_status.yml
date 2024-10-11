@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: 3_xF62dvYwKjgmpwcUiYHsK_H6DIPOEkNAwyF7neux8
 id: commerce_bulk_variation_status
-label: 'Change status'
+label: 'Changer de statut'
 type: commerce_product_variation
 plugin: commerce_bulk_variation_status
 configuration: {  }

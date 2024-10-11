@@ -340,8 +340,8 @@ display:
           hide_alter_empty: true
           type: timestamp_ago
           settings:
-            future_format: '@interval hence'
-            past_format: '@interval ago'
+            future_format: 'Dans @interval'
+            past_format: 'Il y a @interval'
             granularity: 2
         operations:
           id: operations
@@ -506,7 +506,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No people available.'
+          content: "Personne n'est disponible."
           tokenize: false
       sorts:
         created:

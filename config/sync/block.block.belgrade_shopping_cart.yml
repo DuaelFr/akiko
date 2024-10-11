@@ -16,7 +16,7 @@ provider: null
 plugin: commerce_cart
 settings:
   id: commerce_cart
-  label: 'Shopping Cart'
+  label: Panier
   label_display: '0'
   provider: commerce_cart
   dropdown: true

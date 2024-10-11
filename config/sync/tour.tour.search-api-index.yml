@@ -88,7 +88,7 @@ tips:
     label: "Mettre tous les éléments en file d'attente pour réindexation"
     weight: 11
     selector: '#edit-reindex'
-    body: 'This will queue all items on this index for reindexing. Previously indexed data will remain on the search server, so searches on this index will continue to yield results.'
+    body: "Cela mettra en file d'attente tous les éléments de cet index pour réindexation. Les données précédemment indexées resteront sur le serveur de recherche, de sorte que les recherches sur cet index continueront à renvoyer des résultats."
   search-api-index-clear:
     id: search-api-index-clear
     plugin: text

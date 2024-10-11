@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: w6bR3lXJ_TIP18VDJDXjsrUOsROejb1ZBYpfKvqd0IM
 id: commerce_bulk_term_zdelete
-label: 'Delete terms'
+label: 'Supprimer des termes'
 type: taxonomy_term
 plugin: commerce_bulk_term_zdelete
 configuration: {  }

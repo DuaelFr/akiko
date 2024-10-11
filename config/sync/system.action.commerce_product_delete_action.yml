@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: wlvmNEgXVD81RVgOeQJVgSdT5t0RAwWJVyIXdLIONdg
 id: commerce_product_delete_action
-label: 'Supprimer un produit'
+label: 'Supprimer le produit'
 type: commerce_product
 plugin: 'entity_delete_action:commerce_product'
 configuration: {  }
