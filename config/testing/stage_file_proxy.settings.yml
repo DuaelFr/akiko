@@ -3,6 +3,8 @@ _core:
 langcode: fr
 hotlink: false
 origin: 'https://boutique.akikofairtrade.com'
-origin_dir: ''
+origin_dir: sites/default/files
+proxy_headers: ''
 use_imagecache_root: true
 verify: true
+excluded_extensions: ''
