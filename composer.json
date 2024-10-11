@@ -21,6 +21,20 @@
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "mysql-toolkit": {
+            "type": "package",
+            "package": {
+                "name": "skpr/mtk",
+                "version": "0.0.1",
+                "dist": {
+                    "url": "https://github.com/skpr/mtk/releases/download/v0.0.1/mtk-dump_linux_amd64",
+                    "type": "file"
+                },
+                "bin": [
+                    "mtk-dump_linux_amd64"
+                ]
+            }
         }
     },
     "config": {
@@ -70,6 +84,7 @@
         "drush/drush": "^12.5",
         "happyculture/combawa": "^10",
         "kint-php/kint": "^3.3",
+        "skpr/mtk": "^0",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
     },
@@ -83,6 +98,38 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "project:build": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build.sh"
+        ],
+        "project:build:install": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build.sh -m install"
+        ],
+        "project:build:update": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build.sh -m update"
+        ],
+        "project:build:composer": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build-composer.sh"
+        ],
+        "project:build:drupal": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build-drupal.sh"
+        ],
+        "project:build:theme": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/build-theme.sh"
+        ],
+        "project:dump": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/dump.sh"
+        ],
+        "project:init": [
+            "Composer\\Config::disableProcessTimeout",
+            "/usr/bin/env bash ./scripts/kumquat/init.sh"
+        ],
         "post-drupal-scaffold-cmd": [
             "cat etc/scaffold/append.settings.php >> web/sites/default/settings.php"
         ]

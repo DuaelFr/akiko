@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b1377ed60f96988a7b475d24b7ea42",
+    "content-hash": "10157aee13a0d2e190ca1273c1b9b118",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7595,6 +7595,18 @@
                 }
             ],
             "time": "2024-03-02T06:30:58+00:00"
+        },
+        {
+            "name": "skpr/mtk",
+            "version": "0.0.1",
+            "dist": {
+                "type": "file",
+                "url": "https://github.com/skpr/mtk/releases/download/v0.0.1/mtk-dump_linux_amd64"
+            },
+            "bin": [
+                "mtk-dump_linux_amd64"
+            ],
+            "type": "library"
         },
         {
             "name": "symfony/console",

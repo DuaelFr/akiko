@@ -1,0 +1,23 @@
+# See https://github.com/skpr/mtk/blob/master/dump/README.md
+
+rewrite:
+  users_field_data:
+    init: concat(uid, "@localhost")
+    mail: concat(uid, "@localhost")
+    name: concat(uid, "@localhost")
+    pass: '"password"'
+
+nodata:
+  - batch
+  - cache*
+  - captcha_sessions
+  - flood
+  - migrate_message_*
+  - queue
+  - search_api_task
+  - search_dataset
+  - search_index
+  - search_total
+  - semaphore
+  - sessions
+  - watchdog
