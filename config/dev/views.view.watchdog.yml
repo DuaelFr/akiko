@@ -1,4 +1,4 @@
-uuid: 5710d198-a016-4f7b-b51d-d606d6a72f65
+uuid: 46bec5a0-8d13-4410-8fdf-3e23c3b8952e
 langcode: fr
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - dblog
     - user
 _core:
-  default_config_hash: d_YYDAS1Anyj4eLOXI9DnSIAbSX6Kk-qpa71pawlLYI
+  default_config_hash: oG4FVrpj6HxivwdvkAyY23ApbR-iWTnKvM4JHdJ6XmA
 id: watchdog
 label: Watchdog
 module: views
@@ -395,7 +395,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_operations
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false
@@ -449,19 +449,19 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Éléments par page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tout -'
             offset: false
-            offset_label: Offset
+            offset_label: Décalage
       exposed_form:
         type: basic
         options:
           submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -604,6 +604,8 @@ display:
           default: wid
           info:
             nothing:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -700,6 +702,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      filters: {  }
       display_extenders: {  }
       path: admin/reports/dblog
     cache_metadata:

@@ -1,0 +1,12 @@
+adding:
+  ui:
+    show:
+      performance_statistics: true
+      sql_query:
+        enabled: true
+removing:
+  ui:
+    show:
+      performance_statistics: false
+      sql_query:
+        enabled: false

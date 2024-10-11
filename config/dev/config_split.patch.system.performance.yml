@@ -1,0 +1,15 @@
+adding:
+  cache:
+    page:
+      use_internal: false
+  css:
+    gzip: false
+  js:
+    gzip: false
+  response:
+    gzip: false
+removing:
+  css:
+    gzip: true
+  js:
+    gzip: true

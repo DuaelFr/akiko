@@ -1,0 +1,19 @@
+uuid: 7a3c2b02-ec45-4168-904c-f01d64282228
+langcode: fr
+status: false
+dependencies: {  }
+id: testing
+label: Testing
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/testing/
+module:
+  dblog: 0
+  environment_indicator: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

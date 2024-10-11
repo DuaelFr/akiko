@@ -35,7 +35,6 @@ module:
   csv_serialization: 0
   ctools: 0
   datetime: 0
-  dblog: 0
   dynamic_page_cache: 0
   editor: 0
   email_registration: 0
@@ -44,7 +43,6 @@ module:
   facets: 0
   facets_pretty_paths: 0
   field: 0
-  field_ui: 0
   file: 0
   filter: 0
   help: 0
@@ -85,7 +83,6 @@ module:
   user: 0
   views_autocomplete_filters: 0
   views_data_export: 0
-  views_ui: 0
   xls_serialization: 0
   pathauto: 1
   views: 10

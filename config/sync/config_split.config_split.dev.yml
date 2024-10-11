@@ -1,0 +1,28 @@
+uuid: 04fc02fe-bfd7-4da9-bddc-4831508806e3
+langcode: fr
+status: false
+dependencies: {  }
+id: dev
+label: Développement
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/dev/
+module:
+  dblog: 0
+  devel: 0
+  devel_generate: 0
+  environment_indicator: 0
+  field_ui: 0
+  fpa: 0
+  kumquat_dev: 0
+  stage_file_proxy: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list:
+  - system.logging
+  - system.performance
+  - views.settings
