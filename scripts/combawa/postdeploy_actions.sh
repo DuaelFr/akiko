@@ -14,11 +14,11 @@ case $COMBAWA_BUILD_ENV in
 
     # Use config import to disable modules that should not be enabled in this
     # environment.
-    #$DRUSH config:import
+    $DRUSH config:import
 
     # Rebuild search indexes.
-    # $DRUSH sapi-r
-    # $DRUSH sapi-i
+    $DRUSH sapi-r
+    $DRUSH sapi-i
 
     # Rebuild permissions
     # $DRUSH php-eval 'node_access_rebuild();'
@@ -37,11 +37,11 @@ case $COMBAWA_BUILD_ENV in
 
     # Use config import to disable modules that should not be enabled in this
     # environment.
-    #$DRUSH config:import
+    $DRUSH config:import
 
     # Rebuild search indexes.
-    # $DRUSH sapi-r
-    # $DRUSH sapi-i
+    $DRUSH sapi-r
+    $DRUSH sapi-i
 
     # Rebuild permissions
     # $DRUSH php-eval 'node_access_rebuild();'
@@ -56,7 +56,11 @@ case $COMBAWA_BUILD_ENV in
 
     # Use config import to disable modules that should not be enabled in this
     # environment.
-    #$DRUSH config:import
+    $DRUSH config:import
+
+    # Rebuild search indexes.
+    $DRUSH sapi-r
+    $DRUSH sapi-i
 
     # Rebuild permissions
     # $DRUSH php-eval 'node_access_rebuild();'
@@ -66,6 +70,7 @@ case $COMBAWA_BUILD_ENV in
 esac
 
 # Disable the maintenance mode.
+set +x
 if [[ $COMBAWA_BUILD_MODE == "update" ]]; then
   echo ""
   echo ""
