@@ -1,0 +1,8 @@
+uuid: 6f813af4-bf88-4323-b2c2-01ab493a78dd
+langcode: fr
+status: true
+dependencies: {  }
+id: natif
+label: Natif
+plugin: native
+configuration: {  }

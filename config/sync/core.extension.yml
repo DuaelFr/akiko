@@ -69,7 +69,7 @@ module:
   search_api_db: 0
   serialization: 0
   state_machine: 0
-  symfony_mailer_lite: 0
+  symfony_mailer: 0
   system: 0
   taxonomy: 0
   taxonomy_menu: 0
