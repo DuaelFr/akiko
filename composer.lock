@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ebe661a5e9bab6f16e68d352376920d",
+    "content-hash": "8138a39f9cfa8a688d7616e18152d2fe",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -15638,7 +15638,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "RC",
     "stability-flags": {
         "drupal/commerce_bulk": 10,
         "drupalcommerce/commerce_base": 20
