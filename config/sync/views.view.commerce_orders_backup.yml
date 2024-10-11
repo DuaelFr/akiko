@@ -671,6 +671,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -688,7 +689,6 @@ display:
             offset: false
             offset_label: Décalage
           quantity: 9
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -972,24 +972,6 @@ display:
     display_plugin: excel_export
     position: 2
     display_options:
-      display_extenders: {  }
-      style:
-        type: excel_export
-        options:
-          formats:
-            xlsx: xlsx
-          xls_settings:
-            xls_format: Excel2007
-            metadata:
-              creator: ''
-              last_modified_by: ''
-              title: ''
-              description: ''
-              subject: ''
-              keywords: ''
-              category: ''
-              manager: ''
-              company: ''
       fields:
         order_number:
           id: order_number
@@ -998,6 +980,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: order_number
+          plugin_id: field
           label: '#'
           exclude: false
           alter:
@@ -1053,9 +1038,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: null
-          entity_field: order_number
-          plugin_id: field
         placed:
           id: placed
           table: commerce_order
@@ -1063,6 +1045,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: placed
+          plugin_id: field
           label: Date
           exclude: false
           alter:
@@ -1129,9 +1114,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: placed
-          plugin_id: field
         type:
           id: type
           table: commerce_order
@@ -1139,6 +1121,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: type
+          plugin_id: commerce_entity_bundle
           label: Type
           exclude: false
           alter:
@@ -1195,9 +1180,6 @@ display:
           separator: ', '
           field_api_classes: false
           hide_single_bundle: true
-          entity_type: commerce_order
-          entity_field: type
-          plugin_id: commerce_entity_bundle
         store_id:
           id: store_id
           table: commerce_order
@@ -1205,6 +1187,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: store_id
+          plugin_id: commerce_store
           label: Boutique
           exclude: false
           alter:
@@ -1261,9 +1246,6 @@ display:
           separator: ', '
           field_api_classes: false
           hide_single_store: true
-          entity_type: commerce_order
-          entity_field: store_id
-          plugin_id: commerce_store
         uid:
           id: uid
           table: commerce_order
@@ -1271,6 +1253,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: uid
+          plugin_id: field
           label: Client
           exclude: false
           alter:
@@ -1326,9 +1311,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: uid
-          plugin_id: field
         mail:
           id: mail
           table: commerce_order
@@ -1336,6 +1318,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: mail
+          plugin_id: field
           label: Courriel
           exclude: false
           alter:
@@ -1390,9 +1375,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: mail
-          plugin_id: field
         state:
           id: state
           table: commerce_order
@@ -1400,6 +1382,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: status
+          plugin_id: field
           label: État
           exclude: false
           alter:
@@ -1454,9 +1439,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: status
-          plugin_id: field
         total_price__number:
           id: total_price__number
           table: commerce_order
@@ -1464,6 +1446,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: commerce_order
+          entity_field: total_price
+          plugin_id: field
           label: Total
           exclude: false
           alter:
@@ -1520,11 +1505,26 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: commerce_order
-          entity_field: total_price
-          plugin_id: field
+      style:
+        type: excel_export
+        options:
+          formats:
+            xlsx: xlsx
+          xls_settings:
+            xls_format: Excel2007
+            metadata:
+              creator: ''
+              last_modified_by: ''
+              title: ''
+              description: ''
+              subject: ''
+              keywords: ''
+              category: ''
+              manager: ''
+              company: ''
       defaults:
         fields: false
+      display_extenders: {  }
       path: export-commandes
       filename: exports-commandes.xlsx
     cache_metadata:

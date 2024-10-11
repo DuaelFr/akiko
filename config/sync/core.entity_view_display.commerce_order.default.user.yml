@@ -45,13 +45,21 @@ content:
     weight: 2
     region: content
   coupons:
-    label: above
     type: entity_reference_label
+    label: above
     settings:
       link: true
-    region: content
-    weight: 7
     third_party_settings: {  }
+    weight: 7
+    region: content
+  customer_comments:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
   mail:
     type: basic_string
     label: inline
