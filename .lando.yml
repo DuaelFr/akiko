@@ -4,6 +4,12 @@ config:
   webroot: web
   database: mysql:8.0
 services:
+  mail:
+    type: mailhog
+    moreHttpPorts:
+      - 8025
+    hogfrom:
+      - appserver
   node:
     type: node:20
   appserver:
