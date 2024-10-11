@@ -89,11 +89,11 @@ module:
   xls_serialization: 0
   pathauto: 1
   views: 10
-  commerce_base: 1000
+  minimal: 1000
 theme:
   belgrade: 0
   aft: 0
   claro: 0
   bootstrap: 0
   commerce_bootstrap: 0
-profile: commerce_base
+profile: minimal

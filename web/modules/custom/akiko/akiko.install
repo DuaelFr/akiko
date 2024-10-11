@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Akiko install and upgrade scripts.
+ */
+
+/**
+ * Change the main profile to minimal.
+ */
+function akiko_update_10001() {
+  $old = 'commerce_base';
+  $new = 'minimal';
+
+  // First core.extension configuration.
+  $config = \Drupal::configFactory()->getEditable('core.extension');
+
+  $modules = $config->get('module');
+  $modules[$new] = $modules[$old];
+  unset($modules[$old]);
+  $config->set('module', $modules);
+
+  $config->set('profile', $new);
+
+  $config->save(TRUE);
+  drupal_flush_all_caches();
+
+  // Then schema version number.
+  $sc = \Drupal::keyValue('system.schema');
+  $weight = 8000;
+  if ($weight = $sc->get($old)) {
+    $sc->delete($old);
+  }
+  $sc->set($new, $weight);
+  drupal_flush_all_caches();
+}
