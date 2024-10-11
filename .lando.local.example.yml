@@ -1,0 +1,20 @@
+services:
+  appserver:
+    xdebug: true
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+    config:
+      php: etc/lando/local.php.ini
+  database:
+    build_as_root:
+      - 'apt update && apt install pv -y'
+    config:
+      database: etc/lando/local.mysql.cnf
+tooling:
+  # Support debugging Drush with XDEBUG.
+  xdrush:
+    service: appserver
+    cmd: ./vendor/bin/drush
+    env:
+      XDEBUG_TRIGGER: 1

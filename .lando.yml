@@ -1,0 +1,50 @@
+name: akiko
+recipe: drupal11
+config:
+  webroot: web
+  database: mysql:8.0
+services:
+  node:
+    type: node:20
+  appserver:
+    type: php:8.1
+    composer_version: 2-latest
+    overrides:
+      volumes:
+        # Avoid having to set auth tokens in every containers.
+        - "~/.config/composer/auth.json:/var/www/.composer/auth.json"
+        # Share composer cache to improve composer perfs.
+        - "~/.cache/composer:/var/www/.composer/cache"
+        # Allow ssh agent to work within the container on linux.
+        - "$SSH_AUTH_SOCK:/ssh_auth_sock"
+        # Copy ssh_config in the container to ease update builds.
+        - "~/.ssh/config:/var/www/.ssh/config"
+      environment:
+        # Allow ssh agent to work within the container on linux.
+        SSH_AUTH_SOCK: /ssh_auth_sock
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  build:
+    cmd:
+      - appserver: ./scripts/kumquat/build-composer.sh
+      - node: ./scripts/kumquat/build-theme.sh
+      - appserver: ./scripts/kumquat/build-drupal.sh -y
+  theme-install:
+    service: node
+    cmd: npm ci
+    dir: /app/web/themes/custom/aft
+  theme-build:
+    service: node
+    cmd: npm run build
+    dir: /app/web/themes/custom/aft
+  theme-watch:
+    service: node
+    cmd: npm run watch
+    dir: /app/web/themes/custom/aft
+  theme-lint:
+    service: node
+    cmd: npm run lint
+    dir: /app/web/themes/custom/aft
