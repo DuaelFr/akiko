@@ -9,7 +9,6 @@ dependencies:
     - contact
     - file
     - filter
-    - search
     - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
@@ -24,6 +23,5 @@ permissions:
   - 'change own username'
   - 'delete own files'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
