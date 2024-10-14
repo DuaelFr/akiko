@@ -5,8 +5,8 @@ custom-styling:
 
 fonts:
   css:
-    theme:
-      'https//fonts.googleapis.com/css?family=Nunito': { type: external }
+    base:
+      https://fonts.googleapis.com/css?family=Nunito: { external: true }
 
 aft-custom-form-elements:
   js:
