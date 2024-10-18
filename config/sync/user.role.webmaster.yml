@@ -41,6 +41,7 @@ permissions:
   - 'administer commerce_promotion'
   - 'administer contact forms'
   - 'administer menu'
+  - 'administer permissions'
   - 'administer users'
   - 'create accessory commerce_product'
   - 'create clothing commerce_product'
