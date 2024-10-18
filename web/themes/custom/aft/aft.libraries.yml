@@ -13,3 +13,4 @@ aft-custom-form-elements:
     'js/aft_custom_form_elements.js': { }
   dependencies:
     - core/drupal
+    - core/once

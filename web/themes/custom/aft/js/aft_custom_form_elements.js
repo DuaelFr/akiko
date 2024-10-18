@@ -14,22 +14,23 @@
      */
     Drupal.behaviors.quantityIncDec = {
       attach: function (context) {
-        $(".number-btn").once().on("click", function() {
+        $(once('quantityIncDec', '.number-btn')).on("click", function() {
+            const $button = $(this);
+            const $input = $button.parent().find("input");
 
-            var $button = $(this);
-            var oldValue = parseInt($button.parent().find("input").val());
-            var newVal;
+            const oldValue = parseInt($input.val());
+            let newVal;
 
             // Partie modifiée pour n'obtenir que des nombres pairs.
             if ($button.text() === "+") {
               newVal = oldValue + 2;
             } else {
               // Don't allow decrementing below zero
-              newVal = (oldValue > 3) ? oldValue - 2 : 2;
+              newVal = Math.max(0, oldValue - 2);
             }
             // Fin de Partie modifiée pour n'obtenir que des nombres pairs.
 
-            $button.parent().find("input").val(newVal);
+            $input.val(newVal);
           });
 
         // Code ajouté pour obtenir un nombre pair si l'utilisateur saisit manuellement un nombre impair.
