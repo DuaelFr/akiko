@@ -1,6 +1,6 @@
 {
-    "name": "drupalcommerce/project-base",
-    "description": "Commerce 2.x project template",
+    "name": "akiko/shop",
+    "description": "Akiko online shop for professionals",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [

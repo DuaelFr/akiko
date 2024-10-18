@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50fef1437c86334aa756b11c13db62cb",
+    "content-hash": "95a0ecb6494637fe1eca8ad79670a5ee",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1888,7 +1888,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2057,7 +2057,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2105,7 +2105,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2147,7 +2147,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2191,7 +2191,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2234,7 +2234,7 @@
             ],
             "authors": [
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
