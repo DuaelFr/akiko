@@ -78,10 +78,10 @@ function akiko_preprocess_breadcrumb(&$variables) {
 
 function akiko_views_pre_render(ViewExecutable $view) {
   if ($view->id() == 'order_data_export') {
-    foreach ($view->result as $key=>$item) {
-      $view->result[$key]->commerce_order_item_quantity = intval($item->commerce_order_item_quantity);
-      $view->result[$key]->commerce_product_field_data_commerce_product_variation_field = 
-      $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
+    foreach ($view->result as $key => $item) {
+      $view->result[$key]->commerce_order_item_quantity = intval($item->commerce_order_item_quantity ?? 0);
+      $view->result[$key]->commerce_product_field_data_commerce_product_variation_field =
+        $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
     }
   }
 }
@@ -101,11 +101,11 @@ function akiko_commerce_bulk_variation_alter(array &$variations, $data = '', $pr
       $categories = $product->get('field_product_category')->getValue();
       $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($categories[1]['target_id']);
       $name = $term->name->value;
-      
+
       $processed_title = str_replace(' - ', '-' . $name . '-', $title);
       $processed_title = str_replace(', ', '-', $processed_title);
       $sku = strtolower($processed_title);
-        
+
       $variation->get('sku')->setValue($sku);
       $variation->save();
     }
