@@ -891,6 +891,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        placed:
+          id: placed
+          table: commerce_order
+          field: placed
+          relationship: order_id
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_order
+          entity_field: placed
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: placed_op
+            label: 'À partir du'
+            description: ''
+            use_operator: false
+            operator: placed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: placed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              customer: '0'
+              webmaster: '0'
+              administrator: '0'
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups: {  }
@@ -1015,6 +1066,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'
@@ -1063,6 +1115,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'
@@ -1121,6 +1174,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'
@@ -1133,9 +1187,7 @@ display:
     display_plugin: excel_export
     position: 2
     display_options:
-      display_extenders: {  }
-      path: export-commandes
-      filename: export-commandes.xlsx
+      enabled: false
       style:
         type: excel_export
         options:
@@ -1153,16 +1205,19 @@ display:
               category: ''
               manager: ''
               company: ''
-      header_bold: 1
-      header_italic: 0
+      display_extenders: {  }
+      path: export-commandes
+      filename: export-commandes.xlsx
+      header_bold: true
+      header_italic: false
       header_background_color: ''
-      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'
@@ -1250,6 +1305,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        placed:
+          id: placed
+          table: commerce_order
+          field: placed
+          relationship: order_id
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_order
+          entity_field: placed
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: placed_op
+            label: 'À partir du'
+            description: ''
+            use_operator: false
+            operator: placed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: placed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              customer: '0'
+              webmaster: '0'
+              administrator: '0'
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1282,6 +1388,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - user.roles
       tags:
         - 'config:field.storage.commerce_product.field_length'

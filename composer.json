@@ -193,7 +193,8 @@
         },
         "patches": {
             "drupal/core": {
-                "An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2024-03-06/mr-4707-vs-10.2.x.patch"
+                "An empty views pager offset field can cause a PHP type error to be triggered.": "https://www.drupal.org/files/issues/2024-03-06/mr-4707-vs-10.2.x.patch",
+                "[#2648950] Use form element of type date instead textfield when selecting a date in an exposed filter": "https://www.drupal.org/files/issues/2024-08-21/2648950-284.patch"
             }
         },
         "combawa": {
