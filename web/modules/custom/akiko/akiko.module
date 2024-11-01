@@ -1,7 +1,9 @@
 <?php
 
+use Drupal\Core\Render\Markup;
 use Drupal\Core\Url;
 use Drupal\facets\FacetInterface;
+use Drupal\views\Render\ViewsRenderPipelineMarkup;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Drupal\views\ViewExecutable;
 
@@ -83,6 +85,15 @@ function akiko_views_pre_render(ViewExecutable $view) {
       $view->result[$key]->commerce_product_field_data_commerce_product_variation_field =
         $view->result[$key]->commerce_order_item_quantity * $item->commerce_product_field_data_commerce_product_variation_field;
     }
+  }
+}
+
+function akiko_views_data_export_row_alter(&$output, $row, $view) {
+  if ($view->id() == 'commerce_orders' && $view->current_display === 'data_export_1') {
+    /** @var \Drupal\commerce_order\Entity\Order $order */
+    $order = $row->_entity;
+    $output['nothing'] = Markup::create($order->getSubtotalPrice()->getNumber());
+    $output['total_price__number'] = Markup::create($order->getTotalPrice()->getNumber());
   }
 }
 

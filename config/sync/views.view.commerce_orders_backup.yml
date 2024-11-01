@@ -1,6 +1,6 @@
 uuid: def389c6-9644-4061-95c0-a947f3ee2a38
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - commerce
