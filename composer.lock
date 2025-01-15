@@ -11600,16 +11600,16 @@
         },
         {
             "name": "happyculture/kumquat_dev",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Happyculture/kumquat_dev.git",
-                "reference": "5da1798a572ffabcaa4c073e5ea41f210605b21d"
+                "reference": "e0385c15a72a72974910b2e28b9e91b055280fa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Happyculture/kumquat_dev/zipball/5da1798a572ffabcaa4c073e5ea41f210605b21d",
-                "reference": "5da1798a572ffabcaa4c073e5ea41f210605b21d",
+                "url": "https://api.github.com/repos/Happyculture/kumquat_dev/zipball/e0385c15a72a72974910b2e28b9e91b055280fa4",
+                "reference": "e0385c15a72a72974910b2e28b9e91b055280fa4",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -11624,9 +11624,9 @@
             "description": "Drupal module improving Dev Xp",
             "support": {
                 "issues": "https://github.com/Happyculture/kumquat_dev/issues",
-                "source": "https://github.com/Happyculture/kumquat_dev/tree/1.0.3"
+                "source": "https://github.com/Happyculture/kumquat_dev/tree/1.1.1"
             },
-            "time": "2024-08-02T13:52:37+00:00"
+            "time": "2024-11-20T16:36:25+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
