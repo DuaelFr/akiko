@@ -2,11 +2,16 @@ custom-styling:
   css:
     theme:
       css/aft.css: {}
+  dependencies:
+    - belgrade/theme
+    - belgrade/color
 
 fonts:
   css:
     base:
       https://fonts.googleapis.com/css?family=Nunito: { external: true }
+  dependencies:
+    - belgrade/fonts
 
 aft-custom-form-elements:
   js:
