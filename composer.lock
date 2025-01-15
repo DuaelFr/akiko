@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "986d3bf0c0394a3e1066db2d8390986a",
+    "content-hash": "d5b029a8c83240a502b0fda108c7c917",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4664,27 +4664,27 @@
         },
         {
             "name": "drupal/xls_serialization",
-            "version": "1.4.0",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xls_serialization.git",
-                "reference": "8.x-1.4"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/xls_serialization-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "d2192af090afb1ed6165074c14cfc9f3250ef923"
+                "url": "https://ftp.drupal.org/files/projects/xls_serialization-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "62cd7b4386418fd053d487a024e51e042d2b04d7"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "phpoffice/phpspreadsheet": "^2.0"
+                "drupal/core": "^9 || ^10 || ^11",
+                "phpoffice/phpspreadsheet": "^2.3.6"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1725381868",
+                    "version": "2.0.2",
+                    "datestamp": "1736710799",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4699,6 +4699,10 @@
                 {
                     "name": "jhedstrom",
                     "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mably",
+                    "homepage": "https://www.drupal.org/user/3375160"
                 },
                 {
                     "name": "theemstra",
@@ -6439,16 +6443,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.2.2",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513"
+                "reference": "098b848ee6688cb9a252d9ce97889defc517ee88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/ffbcee68069b073bff07a71eb321dcd9f2763513",
-                "reference": "ffbcee68069b073bff07a71eb321dcd9f2763513",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/098b848ee6688cb9a252d9ce97889defc517ee88",
+                "reference": "098b848ee6688cb9a252d9ce97889defc517ee88",
                 "shasum": ""
             },
             "require": {
@@ -6537,9 +6541,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.2.2"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.6"
             },
-            "time": "2024-08-08T02:31:26+00:00"
+            "time": "2025-01-12T03:22:26+00:00"
         },
         {
             "name": "phpowermove/docblock",
