@@ -80,7 +80,7 @@
         "drupal/term_reference_tree": "^2.0",
         "drupal/token": "^1.9",
         "drupal/upgrade_status": "^4.3",
-        "drupal/views_autocomplete_filters": "^1.3",
+        "drupal/views_autocomplete_filters": "^2",
         "drupal/views_data_export": "^1.0",
         "drupal/xls_serialization": "^1.2",
         "drupalcommerce/commerce_base": "10.x-dev@dev",
