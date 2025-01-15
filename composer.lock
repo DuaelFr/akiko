@@ -4320,26 +4320,26 @@
         },
         {
             "name": "drupal/term_reference_tree",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/term_reference_tree.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/term_reference_tree-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "623420a7a6b1b8a78549c226afeb962de77c1730"
+                "url": "https://ftp.drupal.org/files/projects/term_reference_tree-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "d6aa261a9449dadddcbb6320fdcc019941d8413a"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10"
+                "drupal/core": "^9.4 || ^10 || ^11 || ^12"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1684662041",
+                    "version": "2.0.2",
+                    "datestamp": "1736084776",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4365,7 +4365,7 @@
                     "homepage": "https://www.drupal.org/user/804142"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -4385,7 +4385,7 @@
                     "homepage": "https://www.drupal.org/user/1538790"
                 },
                 {
-                    "name": "VladimirAus",
+                    "name": "vladimiraus",
                     "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
