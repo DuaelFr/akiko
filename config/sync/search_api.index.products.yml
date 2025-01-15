@@ -8,7 +8,6 @@ dependencies:
   module:
     - commerce_product
     - taxonomy
-    - search_api
 id: products
 name: Produits
 description: ''
