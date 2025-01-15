@@ -16,7 +16,7 @@ services:
   node:
     type: node:20
   appserver:
-    type: php:8.1
+    type: php:8.2
     composer_version: 2-latest
     overrides:
       volumes:
