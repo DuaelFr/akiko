@@ -3197,26 +3197,26 @@
         },
         {
             "name": "drupal/image_delta_formatter",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_delta_formatter.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_delta_formatter-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "e236790ad92bdbc8a0ba0aa042a8580d8ce9f425"
+                "url": "https://ftp.drupal.org/files/projects/image_delta_formatter-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "6ec48166cb04eda57915dbe28f97fa32c1e77b75"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1685543777",
+                    "version": "8.x-1.3",
+                    "datestamp": "1738516937",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3241,7 +3241,7 @@
                     "homepage": "https://www.drupal.org/user/972218"
                 }
             ],
-            "description": "Provides a formatter that displays a specific delta of a multivalue imagefield.",
+            "description": "Provides a formatter that displays a specific delta of a multi-value image or media field.",
             "homepage": "https://www.drupal.org/project/image_delta_formatter",
             "support": {
                 "source": "https://git.drupalcode.org/project/image_delta_formatter"
