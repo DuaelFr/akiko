@@ -68,7 +68,7 @@
         "drupal/ctools": "^4.0",
         "drupal/email_registration": "^1.1",
         "drupal/environment_indicator": "^4.0",
-        "drupal/facets": "^2",
+        "drupal/facets": "^3",
         "drupal/facets_pretty_paths": "^2.0",
         "drupal/image_delta_formatter": "^1.1",
         "drupal/readmehelp": "^2@beta",
