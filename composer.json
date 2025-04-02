@@ -82,7 +82,7 @@
         "drupal/token": "^1.9",
         "drupal/upgrade_status": "^4.3",
         "drupal/views_autocomplete_filters": "^2",
-        "drupal/views_data_export": "^1.0",
+        "drupal/views_data_export": "1.x-dev@dev",
         "drupal/xls_serialization": "^2",
         "drupalcommerce/commerce_base": "10.x-dev@dev",
         "drush/drush": "^12.5",
