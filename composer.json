@@ -87,8 +87,7 @@
         "drupalcommerce/commerce_base": "10.x-dev@dev",
         "drush/drush": "^12.5",
         "happyculture/combawa": "^10",
-        "skpr/mtk": "^0",
-        "webflo/drupal-finder": "^1.2"
+        "skpr/mtk": "^0"
     },
     "require-dev": {
         "drupal/core-dev-pinned": "^10",
