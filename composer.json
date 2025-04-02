@@ -85,7 +85,7 @@
         "drupal/views_data_export": "1.x-dev@dev",
         "drupal/xls_serialization": "^2",
         "drupalcommerce/commerce_base": "10.x-dev@dev",
-        "drush/drush": "^12.5",
+        "drush/drush": "^13",
         "happyculture/combawa": "^10",
         "skpr/mtk": "^0"
     },
