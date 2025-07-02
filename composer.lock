@@ -5572,24 +5572,21 @@
         },
         {
             "name": "happyculture/combawa",
-            "version": "10.0.2",
+            "version": "10.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Happyculture/combawa.git",
-                "reference": "671c0a47e09a01b27023453143776f644b083afc"
+                "reference": "3955fb089c4fd2085468b1c58654700b08f524cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Happyculture/combawa/zipball/671c0a47e09a01b27023453143776f644b083afc",
-                "reference": "671c0a47e09a01b27023453143776f644b083afc",
+                "url": "https://api.github.com/repos/Happyculture/combawa/zipball/3955fb089c4fd2085468b1c58654700b08f524cd",
+                "reference": "3955fb089c4fd2085468b1c58654700b08f524cd",
                 "shasum": ""
             },
             "require": {
-                "drush/drush": "^12 || ^13",
-                "symfony/dotenv": "^6.3"
-            },
-            "conflict": {
-                "drush/drush": "<11.0"
+                "drush/drush": "^13",
+                "symfony/dotenv": "^6 || ^7"
             },
             "suggest": {
                 "happyculture/combawa-wrapper": "Lets you run combawa from anywhere without naming explicitely vendor/bin/combawa.sh."
@@ -5610,9 +5607,9 @@
             "description": "Projects builder",
             "support": {
                 "issues": "https://github.com/Happyculture/combawa/issues",
-                "source": "https://github.com/Happyculture/combawa/tree/10.0.2"
+                "source": "https://github.com/Happyculture/combawa/tree/10.1.2"
             },
-            "time": "2024-08-05T13:46:35+00:00"
+            "time": "2024-12-04T14:20:20+00:00"
         },
         {
             "name": "html2text/html2text",
