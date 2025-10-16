@@ -17,6 +17,7 @@ module:
   environment_indicator: 0
   field_ui: 0
   fpa: 0
+  js_cookie: 0
   kumquat_dev: 0
   stage_file_proxy: 0
   views_ui: 0
