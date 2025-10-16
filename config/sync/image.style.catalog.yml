@@ -3,13 +3,13 @@ langcode: fr
 status: true
 dependencies: {  }
 name: catalog
-label: 'Catalog (370x370)'
+label: 'Catalog (246x370)'
 effects:
-  2b28ae94-16a9-4ee9-be07-7463789a9f21:
-    uuid: 2b28ae94-16a9-4ee9-be07-7463789a9f21
-    id: image_scale
-    weight: 1
+  31a6baae-cc09-43e9-9f6d-7bf883efd78b:
+    uuid: 31a6baae-cc09-43e9-9f6d-7bf883efd78b
+    id: image_scale_and_crop
+    weight: 2
     data:
-      width: 370
+      width: 246
       height: 370
-      upscale: false
+      anchor: center-center
