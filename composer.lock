@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c8649f83deff754896046078a69f6f2",
+    "content-hash": "8d1cd87a4669e3ac30ce8460a8aa1040",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3273,17 +3273,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "3.0.0-rc20",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "3.0.0-rc20"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-3.0.0-rc20.zip",
-                "reference": "3.0.0-rc20",
-                "shasum": "c9ad4572bce4260d1d233a0c3196e4ff0915e4ee"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "43417cf232df36d6a621151dffa569b77dfd9725"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10 || ^11",
@@ -3296,11 +3296,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc20",
-                    "datestamp": "1722000368",
+                    "version": "3.0.0",
+                    "datestamp": "1780695753",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3314,7 +3314,7 @@
                     "homepage": "https://www.drupal.org/user/86106"
                 },
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
