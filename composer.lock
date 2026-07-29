@@ -4920,17 +4920,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalcommerce/commerce_base.git",
-                "reference": "e6c0ece100d963a989f4ae5d0041b9f20e57fda1"
+                "reference": "cbcc4bd6d915d10e32dca35fc89e5d48642e33c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalcommerce/commerce_base/zipball/e6c0ece100d963a989f4ae5d0041b9f20e57fda1",
-                "reference": "e6c0ece100d963a989f4ae5d0041b9f20e57fda1",
+                "url": "https://api.github.com/repos/drupalcommerce/commerce_base/zipball/cbcc4bd6d915d10e32dca35fc89e5d48642e33c3",
+                "reference": "cbcc4bd6d915d10e32dca35fc89e5d48642e33c3",
                 "shasum": ""
             },
             "require": {
                 "drupal/admin_toolbar": "^3.0",
-                "drupal/commerce": "^2.26",
+                "drupal/commerce": "^2.26 || ^3.0",
                 "drupal/symfony_mailer": "^1.0@alpha"
             },
             "type": "drupal-profile",
@@ -4943,7 +4943,7 @@
                 "source": "https://github.com/drupalcommerce/commerce_base/tree/10.x",
                 "issues": "https://github.com/drupalcommerce/commerce_base/issues"
             },
-            "time": "2023-01-18T09:35:24+00:00"
+            "time": "2025-07-24T18:21:50+00:00"
         },
         {
             "name": "drush/drush",
