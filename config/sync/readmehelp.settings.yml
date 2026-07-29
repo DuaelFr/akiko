@@ -33,3 +33,4 @@ readmehelp_modules:
   - views_autocomplete_filters
   - xls_serialization
   - minimal
+  - mailer_transport
